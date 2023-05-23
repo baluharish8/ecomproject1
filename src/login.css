@@ -1,0 +1,193 @@
+
+/* * { 
+    margin: 0;
+    padding: 0;
+ } */
+.bodydiv {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.5))
+    , url("login.jpg");
+    /* background-color: #eff7fa,url(mobile1.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.h1{
+    /* margin-top: 50px; */
+    padding: 2rem;
+    text-align: center;
+}
+.p1{
+    margin: 1em;
+    text-align: center;
+}
+
+.label {
+    margin: 1em 0 0 0;
+    display: block;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.form {
+
+    margin: 0 auto;
+}
+
+.divc {
+    width: 26vw;
+    margin: 0 auto;
+    background-color: rgb(250, 250, 250);
+    padding: 40px;
+    border: 0 solid;
+    border-radius: 5px;
+}
+
+.input{
+    min-height: 2.2em;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin: 0.5em 0 0 0;
+    /* padding: 2em 0 0 0; */
+    display: block;
+    margin-right: 20px;
+    border: 1px solid;
+    /* border-color: aqua; */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: black;
+    border-color: rgb(200, 200, 200);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.text:focus {
+    outline: none;
+    /* border: none; */
+    border-width: 1px;
+    border-color: #2a9df4;
+
+}
+
+.submit {
+    display: block;
+    margin: 1em 0 0 0;
+    width: 100%;
+    font-style: Verdana, sans-serif, Arial;
+    font-weight: 800;
+    background-color: blue;
+    opacity: 0.8;
+    color: white;
+}
+.signup{
+    
+    display: block;
+    margin: 1em 0 0 0;
+    width: 100%;
+    font-style: Verdana, sans-serif, Arial;
+    font-weight: 800;
+    opacity: 0.8;
+    color: white;  
+    border-radius: 5px;
+    background-color: blue;
+
+
+}
+
+.butt {
+    display: block;
+    margin: 1em 0 0 0;
+    width: 100%;
+    font-style: Verdana, sans-serif, Arial;
+    font-weight: 800;
+    background-color: blue;
+    opacity: 0.8;
+    color: white;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.uns {
+    border: 0px;
+    width: 5%;
+    height: 1.5em;
+    margin: 0 0 4px 0;
+    padding: 0px;
+    vertical-align: middle;
+
+
+}
+
+.lab {
+    margin: 1em 0 0 0;
+    display: block;
+    /* font-weight: bolder; */
+    font-size: large;
+    font-weight: 700;
+    font-family: Tahoma, Verdana, sans-serif;
+    color: black;
+    opacity: 0.9;
+}
+
+.form__hide {
+    display: none;
+}
+
+.form__show {
+    display: block;
+}
+
+.regbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* visibility: hidden; */
+}
+
+.regbtn:hover {
+    color: coral;
+}
+
+.sucregbtn {
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    font-size: larger;
+    cursor: pointer;
+
+}
+
+.visible__hide {
+    visibility: hidden;
+}
+
+.visibility {
+    visibility: visible;
+}
+
+.mod {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    background-color: rgba(0,0,0,0.5)
+    /* opacity: 0.7; */
+  }
+#modal-dia{
+    margin-top: 9rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
