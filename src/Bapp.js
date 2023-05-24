@@ -24,6 +24,8 @@ setShowRoute(!showroute)
     return(
         <>
         <BrowserRouter basename={process.env.PUBLIC_URL} >
+        {/* <BrowserRouter > */}
+
         <Header showRouteToggle={showRouteToggle} ></Header>
                 <Routes>
                 {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}

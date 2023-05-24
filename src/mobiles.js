@@ -568,7 +568,7 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile5.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href=""><img src="images/mobile6.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
@@ -613,7 +613,7 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile6.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href=""><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
@@ -623,11 +623,11 @@ function Mobiles() {
                                     RAM
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
-                                <div className="d flex"><i className="fa-solid fa-star mobile__div2__icon"></i><i
-                                    className="fa-solid fa-star mobile__div2__icon"></i><i
-                                        className="fa-solid fa-star mobile__div2__icon"></i><i
-                                            className="fa-solid fa-star mobile__div2__icon"></i><i
-                                                className="fa-solid fa-star fa-borser mobile__div2__icon__cb"></i>
+                                <div className="d flex">
+                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.4</span> <i
+                                        className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">800 Ratings & 40
+                                            Reviews</span>
+
                                 </div>
                                 <a href="" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$199</span>
@@ -652,7 +652,6 @@ function Mobiles() {
                             </div>
                         </div>
 
-
                         <div className="d-flex  mobile mt-5 row">
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
@@ -667,11 +666,11 @@ function Mobiles() {
                                     RAM
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
-                                <div className="d flex"><i className="fa-solid fa-star mobile__div2__icon"></i><i
-                                    className="fa-solid fa-star mobile__div2__icon"></i><i
-                                        className="fa-solid fa-star mobile__div2__icon"></i><i
-                                            className="fa-solid fa-star mobile__div2__icon"></i><i
-                                                className="fa-solid fa-star fa-borser mobile__div2__icon__cb"></i>
+                                <div className="d flex">
+                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.4</span> <i
+                                        className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">800 Ratings & 40
+                                            Reviews</span>
+
                                 </div>
                                 <a href="" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$199</span>
@@ -711,11 +710,11 @@ function Mobiles() {
                                     RAM
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
-                                <div className="d flex"><i className="fa-solid fa-star mobile__div2__icon"></i><i
-                                    className="fa-solid fa-star mobile__div2__icon"></i><i
-                                        className="fa-solid fa-star mobile__div2__icon"></i><i
-                                            className="fa-solid fa-star mobile__div2__icon"></i><i
-                                                className="fa-solid fa-star fa-borser mobile__div2__icon__cb"></i>
+                                <div className="d flex">
+                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.4</span> <i
+                                        className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">800 Ratings & 40
+                                            Reviews</span>
+
                                 </div>
                                 <a href="" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$199</span>
@@ -755,11 +754,11 @@ function Mobiles() {
                                     RAM
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
-                                <div className="d flex"><i className="fa-solid fa-star mobile__div2__icon"></i><i
-                                    className="fa-solid fa-star mobile__div2__icon"></i><i
-                                        className="fa-solid fa-star mobile__div2__icon"></i><i
-                                            className="fa-solid fa-star mobile__div2__icon"></i><i
-                                                className="fa-solid fa-star fa-borser mobile__div2__icon__cb"></i>
+                                <div className="d flex">
+                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.4</span> <i
+                                        className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">800 Ratings & 40
+                                            Reviews</span>
+
                                 </div>
                                 <a href="" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$199</span>
@@ -783,7 +782,6 @@ function Mobiles() {
                                 </div>
                             </div>
                         </div>
-
 
 
                         <div className="d-flex  mobile mt-5 row">
@@ -800,11 +798,11 @@ function Mobiles() {
                                     RAM
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
-                                <div className="d flex"><i className="fa-solid fa-star mobile__div2__icon"></i><i
-                                    className="fa-solid fa-star mobile__div2__icon"></i><i
-                                        className="fa-solid fa-star mobile__div2__icon"></i><i
-                                            className="fa-solid fa-star mobile__div2__icon"></i><i
-                                                className="fa-solid fa-star fa-borser mobile__div2__icon__cb"></i>
+                                <div className="d flex">
+                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.4</span> <i
+                                        className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">800 Ratings & 40
+                                            Reviews</span>
+
                                 </div>
                                 <a href="" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$199</span>
@@ -830,12 +828,11 @@ function Mobiles() {
                         </div>
 
 
-
                         <div className="d-flex  mobile mt-5 row">
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile3.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href=""><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
@@ -845,11 +842,11 @@ function Mobiles() {
                                     RAM
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
-                                <div className="d flex"><i className="fa-solid fa-star mobile__div2__icon"></i><i
-                                    className="fa-solid fa-star mobile__div2__icon"></i><i
-                                        className="fa-solid fa-star mobile__div2__icon"></i><i
-                                            className="fa-solid fa-star mobile__div2__icon"></i><i
-                                                className="fa-solid fa-star fa-borser mobile__div2__icon__cb"></i>
+                                <div className="d flex">
+                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.4</span> <i
+                                        className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">800 Ratings & 40
+                                            Reviews</span>
+
                                 </div>
                                 <a href="" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$199</span>
@@ -875,12 +872,11 @@ function Mobiles() {
                         </div>
 
 
-
                         <div className="d-flex  mobile mt-5 row">
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile5.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href=""><img src="images/mobile4.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
@@ -890,11 +886,11 @@ function Mobiles() {
                                     RAM
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
-                                <div className="d flex"><i className="fa-solid fa-star mobile__div2__icon"></i><i
-                                    className="fa-solid fa-star mobile__div2__icon"></i><i
-                                        className="fa-solid fa-star mobile__div2__icon"></i><i
-                                            className="fa-solid fa-star mobile__div2__icon"></i><i
-                                                className="fa-solid fa-star fa-borser mobile__div2__icon__cb"></i>
+                                <div className="d flex">
+                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.4</span> <i
+                                        className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">800 Ratings & 40
+                                            Reviews</span>
+
                                 </div>
                                 <a href="" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$199</span>
@@ -918,7 +914,6 @@ function Mobiles() {
                                 </div>
                             </div>
                         </div>
-
 
                     </div>
 

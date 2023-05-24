@@ -91,7 +91,7 @@ code {
       
   }
 .mblcolhide{
-  /* display: none; */
+  display: none;
 }
 
 }
@@ -106,7 +106,7 @@ code {
 
 .mainbody{
   /* background-color:#f0f8ff; */
-  background-color: #eff7fa;
+  background-color: rgb(239, 247, 250);
 }
 .mobilebody{
   background-color:#ffffff;
@@ -117,10 +117,16 @@ code {
 }
 .posiabs{
   position: absolute;
-  top: 0;
+  top: 10px;
+  /* left:30px; */
+  /* right:30px; */
+  width: 100%;
   z-index: 2;
 }
 
+.btdiv{
+  width: 95%;
+}
 .headerone{
 
 }
@@ -338,7 +344,7 @@ border: 1px solid antiquewhite;
 
 
 .mblcolhide{
-  /* font-size: 16px; */
+  font-size: 16px;
 
 }
 
@@ -599,8 +605,11 @@ height: 400px; */
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  font-size: xx-large;
-  color: red;
+  font-size:x-large;
+  /* color: #ffff; */
+  /* background-color: rgba(239, 247, 250,0.5); */
+  color: rgb(255, 255, 255);
+  /* opacity: 0.5; */
 
 }
 

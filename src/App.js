@@ -25,7 +25,7 @@ function App() {
                 {/* SLIDER */}
                 {/* SLIDER */}
 
-                <div className="navbgcolor pt-2 pb-2" id="one">
+                <div className=" pt-2 pb-2" id="one">
                     <div className="posirela" >
                         {!show && <div className="hideslid">
                             <div className="d-flex row container-fluid justify-content-center">
@@ -104,7 +104,7 @@ function App() {
 
                         </div>
                         }
-                        <div className="posiabs w-100">
+                        <div className="posiabs d-flex justify-content-center w-100">
                             <div className="btdiv d-flex justify-content-between mediaquery">
                                 <button onClick={prebtn} id="pbut" className="btnbor"> <i className="fa-solid fa-angle-left"></i> </button>
 
