@@ -23,11 +23,11 @@ setShowRoute(!showroute)
 
     return(
         <>
-        <BrowserRouter  >
+        <BrowserRouter basename={process.env.PUBLIC_URL} >
         <Header showRouteToggle={showRouteToggle} ></Header>
                 <Routes>
                 {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}
-                   <Route path='/mobiles' element={<Mobiles></Mobiles> } />
+                   <Route exact path='/mobiles' element={<Mobiles></Mobiles> } />
 
                     <Route path='/' element={<App  />} />
 
