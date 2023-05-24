@@ -18,12 +18,12 @@ setShowRoute(!showroute)
 }
 
 
-const basename = document.querySelector('base')?.getAttribute('href') ?? '/' 
+// const basename = document.querySelector('base')?.getAttribute('href') ?? '/' 
 
 
     return(
         <>
-        <BrowserRouter  basename={basename}>
+        <BrowserRouter  >
         <Header showRouteToggle={showRouteToggle} ></Header>
                 <Routes>
                 {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}
