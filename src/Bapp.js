@@ -32,7 +32,7 @@ setShowRoute(!showroute)
                     <Route path='/' element={<App  />} />
 
                 </Routes>
-          {showroute&&  <Footer></Footer>}
+          {!showroute&&  <Footer></Footer>}
 
             </BrowserRouter >
         </>
