@@ -18,23 +18,23 @@ setShowRoute(!showroute)
 }
 
 
-
+const basename = document.querySelector('base')?.getAttribute('href') ?? '/' 
 
 
     return(
         <>
-        <BrowserRouter>
+        <BrowserRouter  basename={basename}>
         <Header showRouteToggle={showRouteToggle} ></Header>
                 <Routes>
                 {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}
-                {!showroute&&   <Route path='/mobiles' element={<Mobiles></Mobiles> } />}
+                   <Route path='/mobiles' element={<Mobiles></Mobiles> } />
 
-                {!showroute&&    <Route path='/' element={<App  />} />}
+                    <Route path='/' element={<App  />} />
 
                 </Routes>
-          {!showroute&&  <Footer></Footer>}
+          {showroute&&  <Footer></Footer>}
 
-            </BrowserRouter>
+            </BrowserRouter >
         </>
     )
 }
