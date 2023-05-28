@@ -18,7 +18,7 @@ function Header(p){
     return(
 <>
 {/* <Login></Login> */}
-{showlogincomp&&<Login setUserInfo={setUserInfo} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} showUserProToggle={showUserProToggle} ></Login>}
+{showlogincomp&&<Login basename={process.env.PUBLIC_URL} setUserInfo={setUserInfo} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} showUserProToggle={showUserProToggle} ></Login>}
 {!showlogincomp&& <div className="bg-dark">
                     <div className="container-fluid row ">
 
