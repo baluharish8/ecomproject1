@@ -29,9 +29,9 @@ setShowRoute(!showroute)
         <Header showRouteToggle={showRouteToggle} ></Header>
                 <Routes>
                 {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}
-                   <Route exact path='/mobiles' element={<Mobiles></Mobiles> } />
+                 <Route exact path='/mobiles' element={<Mobiles></Mobiles> } />
 
-                    <Route path='/' element={<App  />} />
+                   {!showroute&&  <Route path='/' element={<App  />} />}
 
                 </Routes>
           {!showroute&&  <Footer></Footer>}

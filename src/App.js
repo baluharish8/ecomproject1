@@ -1,6 +1,7 @@
 
-import { useRef, useState } from "react"
-import { Link } from "react-router-dom"
+import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import  Carousel from "./Carousel";
 // import { useHistory } from 'react-router-dom';
 // import { useHistory } from 'react-router';
 
@@ -20,19 +21,19 @@ function App() {
     return (
         <>
             <div className="mainbody" >
+{/* MULTI CAROUSEL */}
+           <Carousel></Carousel>
+                {/* SLIDER ME */}
+                {/* SLIDER ME*/}
 
-           
-                {/* SLIDER */}
-                {/* SLIDER */}
-
-                <div className=" pt-2 pb-2" id="one">
+                {/* <div className=" pt-2 pb-2" id="one">
                     <div className="posirela" >
                         {!show && <div className="hideslid">
                             <div className="d-flex row container-fluid justify-content-center">
                                 <div className="d-flex justify-content-around  col-12 col-sm-6 col-md-4 ">
                                     <li className="sss center  ">
-                                        <Link className="ss text-white navfs " > <img src="images/disc1.jpg" className="border" alt="" /> <br />
-                                            Electronics</Link>
+                                        <Link  className=" text-white navfs " > <img src="images/disc1.jpg" className="border" alt="" /> <br />
+                                            Electronicsss</Link>
                                     </li>
                                     <li className="sss center   ">
                                         <Link className="ss text-white navfs " href="#"> <img src="images/mbl3.png" className="border" alt="" /> <br />
@@ -46,30 +47,30 @@ function App() {
                                 </div>
                                 <div className="d-flex justify-content-around  col-12 col-sm-6 col-md-4">
                                     <li className="sss center  ">
-                                        <Link className="ss text-white navfs " href="#"> <img src="images/disc1.jpg" className="border" alt="" /> <br />
+                                        <Link className=" text-white navfs " href="#"> <img src="images/disc1.jpg" className="border" alt="" /> <br />
                                             Electronics</Link>
                                     </li>
                                     <li className="sss center   ">
-                                        <Link className="ss text-white navfs " href="#"> <img src="images/mbl3.png" className="border" alt="" /> <br />
+                                        <Link className=" text-white navfs " href="#"> <img src="images/mbl3.png" className="border" alt="" /> <br />
                                             Fashion</Link>
                                     </li>
                                     <li className="sss center   ">
-                                        <Link className="ss text-white navfs " href="#"> <img src="images/disc2.jpg" className="border" alt="" /> <br />
+                                        <Link className="text-white navfs " href="#"> <img src="images/disc2.jpg" className="border" alt="" /> <br />
                                             Electronics</Link>
                                     </li>
 
                                 </div>
                                 <div className="d-flex justify-content-around col-12 col-sm-6 col-md-4">
                                     <li className="sss center  ">
-                                        <Link className="ss text-white navfs " href="#"> <img src="images/disc4.jpg" className="border" alt="" /> <br />
+                                        <Link className=" text-white navfs " href="#"> <img src="images/disc4.jpg" className="border" alt="" /> <br />
                                             Electronics</Link>
                                     </li>
                                     <li className="sss center   ">
-                                        <Link className="ss text-white navfs " href="#"> <img src="images/disc5.jpg" className="border" alt="" /> <br />
+                                        <Link className=" text-white navfs " href="#"> <img src="images/disc5.jpg" className="border" alt="" /> <br />
                                             Electronics</Link>
                                     </li>
                                     <li className="sss center   ">
-                                        <Link className="ss text-white navfs " href="#"> <img src="images/disc1.jpg" className="border" alt="" /> <br />
+                                        <Link className=" text-white navfs " href="#"> <img src="images/disc1.jpg" className="border" alt="" /> <br />
                                             Electronics</Link>
                                     </li>
 
@@ -81,7 +82,7 @@ function App() {
 
                             <div className="d-flex container-fluid ms-3 ">
                                 <li className="sss center   col">
-                                    <Link className="ss text-white navfs " href="#"> <img src="images/disc2.jpg" className="border" alt="" /> <br />
+                                    <Link  className="ss text-white navfs " href="#"> <img src="images/disc2.jpg" className="border" alt="" /> <br />
                                         Electronics</Link>
                                 </li>
                                 <li className="sss center   col">
@@ -112,7 +113,7 @@ function App() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
                 {/* MAIN COROUSAL */}

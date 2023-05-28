@@ -61,7 +61,7 @@ function Header(p){
                                 </Link>
                                 }
                             {showuserpro&&   
-                             <Link  onClick={()=>{showUserProToggle()}} className="headerone__logomain__icondiv__icon" id="login" ><i
+                             <Link to="/" onClick={()=>{showUserProToggle()}} className="headerone__logomain__icondiv__icon" id="login" ><i
                                     className="fas fa-user-circle   iconhover"></i>
                                     <br />
                                     <label htmlFor="login" className="headerone__logomain__icondiv__label">{userinfo} <br/>SignOut</label>

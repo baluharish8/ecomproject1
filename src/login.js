@@ -128,7 +128,9 @@ function Login(p) {
 
                 {!formshow && <div className=" form__show" id="loginid">
                     <h1 className='h1'>Login Page</h1>
-                    <div className="divc " id="loginnerdiv">
+                    <div className='container'>
+                    <div className='row d-flex justify-content-center p-3'>
+                    <div className="col-12 col-sm-8 col-md-6 col-lg-6 divc  " id="loginnerdiv">
                         <form action="" id="form" className='form' >
                             <label className="lab label" htmlFor="yname"> <input type="text" className='text input' value={un} onChange={(e) => { setUn(e.target.value) }} name="name" id="yname" required
                                 placeholder="Enter user name" /></label>
@@ -154,12 +156,17 @@ function Login(p) {
 
 
                     </div>
+                    </div>
+                    </div>
+                 
                 </div>
                 }
 
                 {formshow && <div className="form__hid" id="signupid">
                     <h1 className='h1'>Register here</h1>
-                    <div className="divc ">
+                    <div className='container'>
+                    <div className='row d-flex justify-content-center p-3'>
+                    <div className="col-12 col-sm-8 col-md-6 col-lg-6 divc  " id="loginnerdiv">
                         <form action="" id="form2" className='form'>
                             <label className="lab label" htmlFor="yname2"> <input type="text" className='text input' value={signinpt} onChange={(e) => { setSigninpt(e.target.value) }} name="name" id="yname2" required
                                 placeholder="Enter user name" /></label>
@@ -199,6 +206,8 @@ function Login(p) {
 
 
                         </form>
+                        </div>
+                        </div>  
                     </div>
                 </div>
                 }

@@ -465,6 +465,8 @@ border: 1px solid antiquewhite;
   font-size: 15px;
   font-weight: 700;
   color: black !important;
+  text-decoration: none;
+
 }
 
 .border {
