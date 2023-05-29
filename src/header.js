@@ -19,7 +19,7 @@ function Header(p){
 <>
 {/* <Login></Login> */}
 {showlogincomp&&<Login  setUserInfo={setUserInfo} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} showUserProToggle={showUserProToggle} ></Login>}
-{!showlogincomp&& <div className="bg-dark">
+{!showlogincomp&& <div className="bg-dark mb-1 boxshadow">
                     <div className="container-fluid row ">
 
                         <div className="col-12 col-md-12 col-lg-3  d-flex justify-content-center">

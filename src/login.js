@@ -113,7 +113,7 @@ function Login(p) {
             p.showUserProToggle()
             p.setUserInfo(element.fname)
                 } else {
-                    setAuth4(!auth4)
+                    setAuth4(true)
                     // console.log("auth3 not true")
 
                 }
