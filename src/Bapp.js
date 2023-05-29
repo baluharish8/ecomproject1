@@ -5,6 +5,7 @@ import Mobiles from "./mobiles";
 import Footer from "./footer";
 import Header from "./header";
 import Login from "./login";
+import { HashRouter } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 
@@ -23,8 +24,9 @@ setShowRoute(!showroute)
 
     return(
         <>
-        <BrowserRouter basename={process.env.PUBLIC_URL} >
+        {/* <BrowserRouter basename={process.env.PUBLIC_URL} > */}
         {/* <BrowserRouter > */}
+<HashRouter>
 
         <Header showRouteToggle={showRouteToggle} ></Header>
                 <Routes>
@@ -35,8 +37,9 @@ setShowRoute(!showroute)
 
                 </Routes>
           {!showroute&&  <Footer></Footer>}
+          </HashRouter>
 
-            </BrowserRouter >
+            {/* </BrowserRouter > */}
         </>
     )
 }
