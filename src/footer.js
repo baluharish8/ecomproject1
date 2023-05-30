@@ -6,25 +6,27 @@ function Footer(){
         <>
         <div>
        
-        <button class="btn btn-secondary w-100 toppage__button headerone__logomain__icondiv "><i class="fa-solid fa-angle-up"></i> <br/> Top of Page</button>
+        <button     onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'auto'});
+        }} class="btn btn-secondary w-100 toppage__button headerone__logomain__icondiv "><i class="fa-solid fa-angle-up"></i> <br/> Top of Page</button>
 
     
     </div>
     <div class=" bg-dark   footer container-fluid">
-        <div class="d-flex justify-content-around m-5 p-5 mt-0  pb-0 text-white row">
-            <div class="col-12 col-sm-6 col-md-3">
+        <div id="footer" class="d-flex justify-content-around  mt-0  pb-0 text-white row">
+            <div id="footerdiv" class="col-6 col-sm-6 col-md-3">
                 <h6>Get to Know Us</h6>
                 <Link href="" class="footer__anchor">About Us</Link><br/>
                 <Link href="" class="footer__anchor">careers</Link><br/>
                 <Link href="" class="footer__anchor">Press releases</Link>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div id="footerdiv" class="col-6 col-sm-6 col-md-3">
                 <h6>Contact with Us</h6>
                 <Link href="" class="footer__anchor">Facebook</Link><br/>
                 <Link href="" class="footer__anchor">Twitter</Link><br/>
                 <Link href="" class="footer__anchor">Instagram</Link>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3">
                 <h6>Make Money With Us</h6>
                 <Link href="" class="footer__anchor">Facebook</Link><br/>
                 <Link href="" class="footer__anchor">Twitter</Link><br/>
@@ -36,7 +38,7 @@ function Footer(){
                 <Link href="" class="footer__anchor">100% Purchase Protection</Link> <br/>
                 <Link href="" class="footer__anchor">Returns Centre</Link><br/>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-6 col-sm-6 col-md-3">
                 <h6>Let Us Help You</h6>
                 <Link href="" class="footer__anchor">Covid-19</Link><br/>
                 <Link href="" class="footer__anchor">Your Account</Link><br/>
@@ -46,6 +48,7 @@ function Footer(){
 
             </div>
         </div>
+
         <div class="footer__border ">
 
         </div>
@@ -55,19 +58,19 @@ function Footer(){
         </div>
         <div class="d-flex justify-content-center align-items-center pb-4 row ">
             
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2">
             <Link href="" class="footer__anchor   ">Covid-19</Link><span class="footer__bottom__anchorborder ps-2 me-2 "> </span>
 
             </div>
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                 <Link href="" class="footer__anchor   ">Your Account</Link><span class="footer__bottom__anchorborder ps-2 me-2 "> </span>
 
             </div>
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                 <Link href="" class="footer__anchor   ">100% Purchase Protection</Link> <span class="footer__bottom__anchorborder ps-2 me-2 "> </span>
 
             </div>
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                 <Link href="" class="footer__anchor   ">Returns Centre</Link><span class="footer__bottom__anchorborder ps-2 me-2 "> </span>
 
             </div>

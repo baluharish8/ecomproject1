@@ -114,7 +114,7 @@ function Mobiles() {
                     </div>
                 </div>
                 <div className="container-fluid row">
-                    <div className="col-lg-2 mblcolhide">
+                    <div className="col-md-2 mblcolhide">
                         <div className="category mt-4">
                             <h6 className="category__head">
                                 Category

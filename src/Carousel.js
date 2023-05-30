@@ -25,7 +25,7 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 9,
     slidesToScroll: 2,
-    arrows: false,
+    arrows: true,
     draggable: true,
     // prevArrow: <CustomPrevArrow />,
     // nextArrow: <CustomNextArrow />,
@@ -66,9 +66,9 @@ const Carousel = () => {
       <div className="carousel-container ps-4 mt-4" >
         <Slider {...settings} >
           <div className=''>
-            <Link className='linktext text-center'>
+            <a href='https://www.amazon.in/s?k=fashion&crid=330VC5AC7RPB2&sprefix=fashion%2Caps%2C526&ref=nb_sb_noss_1' className='linktext text-center'>
               <img src="images/linkfashion.jpg" alt="Image 1" className='imagesize' /> Fashion
-            </Link>
+            </a>
           </div>
           <div className='' >
             <Link to="/mobiles" className='linktext sss list1'>
@@ -78,46 +78,46 @@ const Carousel = () => {
           </div>
           <div>
            
-            <Link className='linktext text-center'>
+            <a href='https://www.amazon.in/gp/browse.html?node=976419031&ref_=nav_em_sbc_tvelec_all_elec_0_2_9_13' className='linktext text-center'>
               <img src="images/linkelectronic.jpg" alt="Image 4" className='imagesize' />Electronics
            
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className='linktext'>
+            <a href='https://www.amazon.in/gp/browse.html?node=5122348031&ref_=nav_em_sbc_tvelec_all_appliance_0_2_9_20' className='linktext'>
               <img src="images/linkappliances.jpg" alt="Image 5" className='imagesize' />
               Aplliances
 
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className='linktext'>
+            <a href='https://www.amazon.in/s?k=furniture&ref=nb_sb_noss_1' className='linktext'>
               <img src="images/linkhome.jpg" alt="Image 6" className='imagesize' />Furniture
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className='linktext'>
+            <a href='https://www.amazon.in/gp/browse.html?node=1984443031&ref_=nav_em_sbc_sportslugg_all_sports_0_2_14_15' className='linktext'>
               <img src="images/linksports.jpg" alt="Image 7" className='imagesize' />
               Sport&Fitness
 
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className='linktext'>
+            <a href='https://www.amazon.in/gp/browse.html?node=5925789031&ref_=nav_em_sbc_hk_kitchendining_0_2_12_3' className='linktext'>
               <img src="images/linkkitchen.jpg" alt="Image 8" className='imagesize' /> Kitchen
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className='linktext'>
+            <a href='https://www.amazon.in/gp/browse.html?node=1350380031&ref_=nav_em_sbc_tbk_toys_games_0_2_15_2' className='linktext'>
               <img src="images/linktoy.jpg" alt="Image 9" className='imagesize' />Kid Toys
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className='linktext'>
+            <a href='https://www.amazon.in/s?k=footwear&ref=nb_sb_noss' className='linktext'>
               <img src="images/linkfootware.jpg" alt="Image 2" className='imagesize' />
               Footware
 
-            </Link>
+            </a>
           </div>
         </Slider>
       </div>
