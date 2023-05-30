@@ -22,7 +22,7 @@ const Carousel = () => {
     // dots: true,
     infinite: false,
     // centerPadding: '10px',
-    speed: 1000,
+    speed: 100,
     slidesToShow: 9,
     slidesToScroll: 2,
     arrows: true,

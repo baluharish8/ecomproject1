@@ -31,9 +31,9 @@ function Header(p) {
         <>
             {/* <Login></Login> */}
             {showlogincomp && <Login setUserInfo={setUserInfo} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} showUserProToggle={showUserProToggle} ></Login>}
-            {!showlogincomp && <div className="bg-dark mb-1 boxshadow">
+            {!showlogincomp && <div className="bg-dark mb-1 boxshadow headerone">
                 <div className="container-fluid row ">
-                    <div className="col-8  col-lg-3  d-flex justify-content-start">
+                    <div className="col-8 col-md-3 col-lg-3  d-flex justify-content-start">
                         <div className=" text-white me-4 mediaquery2 ">
                             <Link to='/about' className="mt-2"><img src="images/logo.png" alt="" /></Link><label
                                 className="headerone__logomain__logodiv__label mt-2">-Shopping</label>
@@ -44,7 +44,7 @@ function Header(p) {
                             <label className="headerone__logomain__icondiv__label">Enter location</label>
                         </div>
                     </div>
-                    <div className="col-12 order-12 order-lg-1 col-lg-6 headerone__logomain__icondiv d-flex align-items-center  ">
+                    <div className="col-12 order-12 order-md-1 col-md-7 col-lg-6 headerone__logomain__icondiv d-flex align-items-center  ">
                         <form className="d-flex justify-content-center w-100  ">
 
                             <input onChange={(e) => { setSearch(e.target.value) }} value={search} className="form-control me-1 headerone__formdiv__form__input  " type="search" id="src"
@@ -53,7 +53,7 @@ function Header(p) {
 
                         </form>
                     </div>
-                    <div className="col-4 order-1 order-lg-12 col-lg-3 d-flex justify-content-end">
+                    <div className="col-4 order-1 order-md-12 col-md-2 col-lg-3 d-flex justify-content-end">
                         <div className=" pe-5 mediaquery3 headerone__logomain__icondiv header_icons">
                             <a href="https://www.amazon.in/gp/browse.html?node=3704982031&ref_=nav_em_sbc_gc_all_0_2_19_2" className="headerone__logomain__icondiv__icon"><i
                                 className="fa-sharp fa-solid fa-hand-holding-heart "></i></a><br />

@@ -33,7 +33,9 @@ code {
   .mblcolhide {
     display: none;
   }
-
+  .headerone {
+    padding-bottom: 10px;
+  }
   #navbarlargeone {
     display: none !important;
   }
@@ -41,9 +43,7 @@ code {
   .navbarsmall{
 display: block !important;
 }
-.header_icons{
-  display: none;
-}
+
 #footerdiv{
   /* margin-top: 10px !important; not working */
   padding-top: 20px !important;
@@ -117,7 +117,9 @@ padding: 0 !important;
     /* right: 5px; */
 
   }
-
+  .header_icons{
+    display: none;
+  }
   .navfs{
     font-size: 12px !important;
   }
@@ -164,7 +166,7 @@ padding: 0 !important;
 
 }
 
-.headerone {}
+
 
 
 
