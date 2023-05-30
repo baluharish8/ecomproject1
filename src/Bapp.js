@@ -37,7 +37,7 @@ setShowRoute(!showroute)
 
                 </Routes>
           {!showroute&&  <Footer></Footer>}
-          
+
           </HashRouter>
             {/* </BrowserRouter > */}
         </>

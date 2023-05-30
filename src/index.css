@@ -34,12 +34,14 @@ code {
     display: none;
   }
   .headerone {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
   #navbarlargeone {
     display: none !important;
   }
-
+#mobiledivid{
+  margin-top: 1rem !important;
+}
   .navbarsmall{
 display: block !important;
 }

@@ -31,7 +31,7 @@ function Mobiles() {
                 {/* SLIDER ME */}
                 {/* SLIDER ME*/}
 
-                <div className="d-flex row container-fluid justify-content-center bg-white pt-2 pb-2 boxshadow navbarlargeone">
+                <div id="navbarlargeone" className="d-flex row container-fluid justify-content-center bg-white pt-2 pb-2 boxshadow ">
                     <div className="d-flex justify-content-around  col-12 col-sm-6 col-md-4  pare ">
                         <li className="sss center   ">
                             <a className="ss text-white navfs " href="#"> <img src="images/linkfashion.jpg" className="border" alt="" />
@@ -115,7 +115,7 @@ function Mobiles() {
                 </div>
                 <div className="container-fluid row">
                     <div className="col-md-2 mblcolhide">
-                        <div className="category mt-4">
+                        <div  className="category mt-4 ">
                             <h6 className="category__head">
                                 Category
                             </h6>
@@ -389,7 +389,7 @@ function Mobiles() {
 
 
                     <div className="container-fluid col">
-                        <div className="d-flex  mobile mt-5 row">
+                        <div id="mobiledivid" className="d-flex  mobile mt-5 row">
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
