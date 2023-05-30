@@ -50,10 +50,12 @@ display: block !important;
 
 }
 #footer{
-  padding-left: 8% !important;
+margin: 0 !important;
+padding: 0 !important;
+}
 
 }
-}
+
 
 @media only screen and (max-width:576px) {
   .mobile__div2 {

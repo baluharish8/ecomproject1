@@ -13,7 +13,7 @@ function Footer(){
     
     </div>
     <div class=" bg-dark   footer container-fluid">
-        <div id="footer" class="d-flex justify-content-around  mt-0  pb-0 text-white row">
+        <div id="footer" class="d-flex justify-content-around  mt-0 m-5 p-5 pb-0 text-white row">
             <div id="footerdiv" class="col-6 col-sm-6 col-md-3">
                 <h6>Get to Know Us</h6>
                 <Link href="" class="footer__anchor">About Us</Link><br/>
