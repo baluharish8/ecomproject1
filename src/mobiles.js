@@ -43,12 +43,12 @@ function Mobiles() {
                                 alt="" /></Link>
                             {/* pare list1 sss seemore__hide mobiledpdn2*/}
                             <div className="seemore__hide mobiledpdn2  ">
-                                <a href="" className="dpdn__anchor "> Oneplus </a><br />
-                                <a href="" className="dpdn__anchor "> Oppo </a><br />
-                                <a href="" className="dpdn__anchor "> Redmi </a><br />
-                                <a href="" className="dpdn__anchor"> iqoo </a><br />
-                                <a href="" className="dpdn__anchor"> Apple </a><br />
-                                <a href="" className="dpdn__anchor"> Xiaomi </a>
+                                <a href="https://www.amazon.in/s?k=one+plus&crid=3Q4WILHZZX932&sprefix=one+plus%2Caps%2C257&ref=nb_sb_noss" className="dpdn__anchor "> Oneplus </a><br />
+                                <a href="https://www.amazon.in/s?k=one+plus&crid=3Q4WILHZZX932&sprefix=one+plus%2Caps%2C257&ref=nb_sb_noss" className="dpdn__anchor "> Oppo </a><br />
+                                <a href="https://www.amazon.in/s?k=redmi&crid=2Z5CYP6X1SR6&sprefix=redmi%2Caps%2C278&ref=nb_sb_noss_1" className="dpdn__anchor "> Redmi </a><br />
+                                <a href="https://www.amazon.in/s?k=iqoo&crid=198UC5DH1U3ED&sprefix=iqoo%2Caps%2C295&ref=nb_sb_ss_ts-doa-p_1_4" className="dpdn__anchor"> iqoo </a><br />
+                                <a href="https://www.amazon.in/s?k=apple&crid=1LQQCZR88Q5K6&sprefix=app%2Caps%2C277&ref=nb_sb_ss_ts-doa-p_1_3" className="dpdn__anchor"> Apple </a><br />
+                                <a href="https://www.amazon.in/s?k=xioami&crid=20Y02IAMGS10C&sprefix=xio%2Caps%2C322&ref=nb_sb_ss_ts-doa-p_1_3" className="dpdn__anchor"> Xiaomi </a>
                             </div>
                             <div className="d-flex align-items-center">
                                 <button id="mobilesbtn" className="list1__dpdn "> <Link to="/mobiles" href=""
@@ -398,7 +398,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
+                                <a href="https://www.amazon.in/Itel-6000mAh-Charging-Octa-core-Processor/dp/B0BXLPY5WW/ref=sr_1_1?crid=36E41WCH7C76Z&keywords=Itel+P40+%286000mAh+Battery+with+Fast+Charging&qid=1685709415&sprefix=itel+p40+6000mah+battery+with+fast+charging%2Caps%2C541&sr=8-1" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
                                     |
                                     2GB
                                     RAM
@@ -441,7 +441,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Redmi K50i 5G (Quick Silver, 6GB RAM, 128GB Storage) | Flagship Mediatek Dimensity 8100 Processor | 144Hz Liquid FFS Display</a>
+                                <a href="https://www.amazon.in/Redmi-Flagship-Mediatek-Dimensity-Processor/dp/B0B4DWPM27/ref=sr_1_1?crid=274T4LGAFSZAV&keywords=Redmi+K50i+5G+%28Quick+Silver%2C+6GB+RAM%2C+128GB+Storage%29&qid=1685709460&sprefix=redmi+k50i+5g+quick+silver%2C+6gb+ram%2C+128gb+storage+%2Caps%2C1165&sr=8-1" className="mobile__div2__anchor cart__anchor  ">Redmi K50i 5G (Quick Silver, 6GB RAM, 128GB Storage) | Flagship Mediatek Dimensity 8100 Processor | 144Hz Liquid FFS Display</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
@@ -481,7 +481,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
+                                <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i
@@ -520,7 +520,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
+                                <a href="https://www.amazon.in/Itel-6000mAh-Charging-Octa-core-Processor/dp/B0BXLPY5WW/ref=sr_1_1?crid=36E41WCH7C76Z&keywords=Itel+P40+%286000mAh+Battery+with+Fast+Charging&qid=1685709415&sprefix=itel+p40+6000mah+battery+with+fast+charging%2Caps%2C541&sr=8-1" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
                                     |
                                     2GB
                                     RAM
@@ -564,7 +564,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
+                                <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
@@ -605,7 +605,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
+                                <a href="https://www.amazon.in/Redmi-Mystique-AMOLED-Snapdragon%C2%AE-Triple/dp/B0BQ3PYMCZ/ref=sr_1_1_sspa?crid=14UP6TY8KV5RM&keywords=redmi+note+12+5g&qid=1685709918&sprefix=Redmi+Note+12+5G%2Caps%2C803&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.5</span> <i
@@ -644,7 +644,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
+                                <a href="https://www.amazon.in/Itel-6000mAh-Charging-Octa-core-Processor/dp/B0BXLPY5WW/ref=sr_1_1?crid=36E41WCH7C76Z&keywords=Itel+P40+%286000mAh+Battery+with+Fast+Charging&qid=1685709415&sprefix=itel+p40+6000mah+battery+with+fast+charging%2Caps%2C541&sr=8-1" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
                                     |
                                     2GB
                                     RAM
@@ -688,7 +688,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
+                                <a href="https://www.amazon.in/Redmi-Mystique-AMOLED-Snapdragon%C2%AE-Triple/dp/B0BQ3PYMCZ/ref=sr_1_1_sspa?crid=14UP6TY8KV5RM&keywords=redmi+note+12+5g&qid=1685709918&sprefix=Redmi+Note+12+5G%2Caps%2C803&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.9</span> <i
@@ -728,7 +728,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
+                                <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.5</span> <i
@@ -768,7 +768,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
+                                <a href="https://www.amazon.in/Itel-6000mAh-Charging-Octa-core-Processor/dp/B0BXLPY5WW/ref=sr_1_1?crid=36E41WCH7C76Z&keywords=Itel+P40+%286000mAh+Battery+with+Fast+Charging&qid=1685709415&sprefix=itel+p40+6000mah+battery+with+fast+charging%2Caps%2C541&sr=8-1" className="mobile__div2__anchor cart__anchor  ">Itel P40 (6000mAh Battery with Fast Charging
                                     |
                                     2GB
                                     RAM
@@ -812,7 +812,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
+                                <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.0</span> <i
@@ -852,7 +852,7 @@ function Mobiles() {
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
-                                <a href="" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
+                                <a href="https://www.amazon.in/Redmi-Mystique-AMOLED-Snapdragon%C2%AE-Triple/dp/B0BQ3PYMCZ/ref=sr_1_1_sspa?crid=14UP6TY8KV5RM&keywords=redmi+note+12+5g&qid=1685709918&sprefix=Redmi+Note+12+5G%2Caps%2C803&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
                                 <br />
                                 <div className="d flex">
                                     <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i

@@ -15,6 +15,11 @@ function Login(p) {
     let [signinpt, setSigninpt] = useState('')
     let [signuppw, setSignuppw] = useState('')
     let [cnpw, setCnpw] = useState('')
+    const [submit,setSubmit]=useState(false)
+    const [register,setRegister]=useState(false)
+    const [confirmerror,setConfirmError]=useState(false)
+
+    
 
 
     const history = useNavigate()
@@ -44,6 +49,7 @@ function Login(p) {
     }, [storedvalue]);
 
     function signUp() {
+        setRegister(true)
         if (signinpt.trim() == '') {
             console.log('enter value')
         }else if (signuppw.trim() == cnpw.trim()) {
@@ -51,11 +57,12 @@ function Login(p) {
      
             modalShowToggle()
             setError((errors) => ({ ...errors, cnp: '' }))
-
+            setRegister(false)
+            setConfirmError(false)
         }
         else {
             setError((errors) => ({ ...errors, cnp: 'Password Not Match' }))
-
+            setConfirmError(true)
             console.log('not match')
         }
     }
@@ -67,6 +74,7 @@ function Login(p) {
 
     function toggleShow() {
         setFormShow(!formshow)
+        setSubmit(false)
         setUn('')
         setPw('')
     }
@@ -75,11 +83,14 @@ function Login(p) {
         // setUn('')
         // setPw('')
     }
+
+
     function subFun(e) {
         e.preventDefault()
+setSubmit(true)
         if (un.trim() == '') {
             setError((errors) => ({ ...errors, une: 'Enter user Name' }))
-            // errors.une = 'Enter user Name'
+
 
         } else {
             // setAuth1(true)
@@ -112,6 +123,7 @@ function Login(p) {
             p.showRouteToggle()
             p.showUserProToggle()
             p.setUserInfo(element.fname)
+            setSubmit(false)
                 } else {
                     setAuth4(true)
                     // console.log("auth3 not true")
@@ -134,23 +146,34 @@ function Login(p) {
                         <form action="" id="form" className='form' >
                             <label className="lab label" htmlFor="yname"> <input type="text" className='text input' value={un} onChange={(e) => { setUn(e.target.value) }} name="name" id="yname" required
                                 placeholder="Enter user name" /></label>
-                            <p className='text-danger text-start p1' > {errors.une} </p>
+                            {/* <p className='text-danger text-start p1' > {errors.une} </p> */}
+                            {
+                               submit&&un.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Username </p>
+                                      
+                            }
                             <label className="lab label" htmlFor="password"> <input type="text" className='text input' value={pw} onChange={(e) => { setPw(e.target.value) }} name="name" id="password"
                                 required placeholder="Enter your password" /></label>
-                            <p className='text-danger text-start p1' > {errors.pwe} </p>
-
+                            {/* <p className='text-danger text-start p1' > {errors.pwe} </p> */}
+                            {
+                               submit&&pw.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Password </p>
+                                      
+                            }
+                           
+                            
                             <input type="submit" className='submit input' onClick={(e) => { subFun(e) }} name="submit" id="sub" value="Login" />
                      
                        
                         </form>
                         {auth4 && <>
-                            <p className='text-danger text-center mt-2' >  check
+                            <div className=' text-dark w-100  d-flex justify-content-center align-items-center mt-2' >
+                            <p className='w-50 text-danger  d-flex justify-content-center align-items-center  border border-danger rounded-1 p-1' >  check
                             your user name & password </p>
-                            <h4 className='text-dark text-center' >or</h4>
+                            </div>
+                            <div className=' text-danger w-100  d-flex flex-column justify-content-center align-items-center m-0 p-0 h4 ' > <div> <p className='m-0 p-0 '> OR </p> </div> <div> <i class="fa fa-angle-double-down" aria-hidden="true"></i> </div> </div>
                         </>    
                         }
                         <div className='text-center'>
-                        <button onClick={() => { toggleShow() }} id="errorloginbutton" className="btn btn-info w-80 mt-3 text-white p-1 "> Register here  </button>
+                        <button onClick={() => { toggleShow() }} id="errorloginbutton" className="btn btn-info w-80  text-white p-2 mt-2 "> Register here  </button>
 
                         </div>
 
@@ -170,12 +193,27 @@ function Login(p) {
                         <form action="" id="form2" className='form'>
                             <label className="lab label" htmlFor="yname2"> <input type="text" className='text input' value={signinpt} onChange={(e) => { setSigninpt(e.target.value) }} name="name" id="yname2" required
                                 placeholder="Enter user name" /></label>
+                                  {
+                               register&&signinpt.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Username </p>
+                                      
+                            }
                             <label className="lab label" htmlFor="password2"> <input type="text" className='text input' value={signuppw} onChange={(e) => { setSignuppw(e.target.value) }} name="name" id="password2"
                                 required placeholder="Enter your password" /></label>
-                            <label className="lab label" htmlFor="cnpassword"> <input type="text" className='text input' value={cnpw} onChange={(e) => { setCnpw(e.target.value) }} name="name" id="cnpassword"
+                                       {
+                               register&&signuppw.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Password </p>
+                                      
+                            }
+                            <label className="lab label" htmlFor="cnpassword"> <input type="text" className='text input' value={cnpw} onChange={(e) => { setCnpw(e.target.value); setConfirmError(false) }} name="name" id="cnpassword"
                                 required placeholder="Confirm password" /></label>
-                            <p className='text-danger ' > {errors.cnp} </p>
-                        
+                            {/* <p className='text-danger ' > {errors.cnp} </p> */}
+                            {
+                               register&&cnpw.trim()===''&&  <p className='text-danger text-start p1' >Please Confirm Password </p>
+                                      
+                            }
+                          {
+                               confirmerror&&signuppw.trim()!==''&&cnpw.trim()!==''&& <p className='text-danger text-start p1' >Password Not Match </p>
+                                      
+                            }
                             
 
                             {/* <!-- Button trigger modal --> */}

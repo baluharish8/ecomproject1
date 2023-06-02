@@ -431,7 +431,9 @@ h6 {
   font-weight: 600;
   font-size: larger;
 }
-
+.mobile__div2__anchor:hover {
+ color:rgb(224, 99, 15);
+}
 .mobile__div2__icon {
   border-radius: 4px;
   padding: 2px;
