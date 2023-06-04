@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import './login.css';
 function Login(p) {
     // console.log(p)
+    const history = useNavigate()
     let [un, setUn] = useState('')
     let [pw, setPw] = useState('')
     let [errors, setError] = useState({
@@ -18,11 +19,13 @@ function Login(p) {
     const [submit,setSubmit]=useState(false)
     const [register,setRegister]=useState(false)
     const [confirmerror,setConfirmError]=useState(false)
+ const[loginpasswordiconshow,setLoginPasswordIconShow]=useState(false);
+ const[loginpasswordfield,setLoginPasswordField]=useState(false);
+ const[registerpasswordiconshow,setRegisterPasswordIconShow]=useState(false);
+ const[registerpasswordfield,setRegisterPasswordField]=useState(false);
+ const[confirmpasswordiconshow,setConfirmPasswordIconShow]=useState(false);
+ const[confirmpasswordfield,setConfirmPasswordField]=useState(false);
 
-    
-
-
-    const history = useNavigate()
 
     let auth1 = false;
     let auth2 = false;
@@ -132,7 +135,11 @@ setSubmit(true)
             });
         }      
     }
-
+    useEffect(
+        ()=>{
+            console.log(loginpasswordiconshow)
+        },[loginpasswordiconshow]
+    )
 
     return (
         <>
@@ -142,17 +149,33 @@ setSubmit(true)
                     <h1 className='h1'>Login Page</h1>
                     <div className='container'>
                     <div className='row d-flex justify-content-center p-3'>
-                    <div className="col-12 col-sm-8 col-md-6 col-lg-6 divc  " id="loginnerdiv">
+                    <div className="col-12 col-sm-8 col-md-6 col-lg-4 divc  " id="loginnerdiv">
                         <form action="" id="form" className='form' >
-                            <label className="lab label" htmlFor="yname"> <input type="text" className='text input' value={un} onChange={(e) => { setUn(e.target.value) }} name="name" id="yname" required
-                                placeholder="Enter user name" /></label>
+                            <label className="lab label" htmlFor="yname"> <input type="text" className='text input ' value={un} onChange={(e) => { setUn(e.target.value) }} name="name" id="yname" required
+                                placeholder="Enter user name" /> </label>
                             {/* <p className='text-danger text-start p1' > {errors.une} </p> */}
                             {
                                submit&&un.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Username </p>
                                       
                             }
-                            <label className="lab label" htmlFor="password"> <input type="text" className='text input' value={pw} onChange={(e) => { setPw(e.target.value) }} name="name" id="password"
-                                required placeholder="Enter your password" /></label>
+                           
+                           <div className='loginpasswordinput'>
+                            <input type={loginpasswordfield?"text":"password"} className='text input ' value={pw} onChange={(e) => { setPw(e.target.value) }} name="name" id="password"
+                                required placeholder="Enter your password" /> 
+                               {/*  Icon not changing while using ternary operator  {
+                                loginpasswordiconshow ? <button className='loginpasswordicon transparent' onClick={()=>{setLoginPasswordIconShow(false)}} > <i className="fa fa-eye-slash "  aria-hidden="true"></i> </button> : <button className='loginpasswordicon transparent' onClick={()=>{setLoginPasswordIconShow(true)}} > <i className="fa fa-eye "  aria-hidden="true"></i> </button>
+                               } */}
+                               
+                                {
+                                loginpasswordiconshow&& <button className='loginpasswordicon transparent' onClick={()=>{setLoginPasswordIconShow(false); setLoginPasswordField(false)}} > <i className="fa fa-eye-slash "  aria-hidden="true"></i> </button>   
+
+                                }
+                                      {
+                                !loginpasswordiconshow&& <button className='loginpasswordicon transparent' onClick={()=>{setLoginPasswordIconShow(true); setLoginPasswordField(true)}} > <i className="fa fa-eye "  aria-hidden="true"></i> </button>   
+
+                                }
+                               
+                            </div>
                             {/* <p className='text-danger text-start p1' > {errors.pwe} </p> */}
                             {
                                submit&&pw.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Password </p>
@@ -189,22 +212,42 @@ setSubmit(true)
                     <h1 className='h1'>Register here</h1>
                     <div className='container'>
                     <div className='row d-flex justify-content-center p-3'>
-                    <div className="col-12 col-sm-8 col-md-6 col-lg-6 divc  " id="loginnerdiv">
+                    <div className="col-12 col-sm-8 col-md-6 col-lg-4 divc  " id="loginnerdiv">
                         <form action="" id="form2" className='form'>
                             <label className="lab label" htmlFor="yname2"> <input type="text" className='text input' value={signinpt} onChange={(e) => { setSigninpt(e.target.value) }} name="name" id="yname2" required
-                                placeholder="Enter user name" /></label>
+                                placeholder="Enter user name" />  </label>
                                   {
                                register&&signinpt.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Username </p>
                                       
                             }
-                            <label className="lab label" htmlFor="password2"> <input type="text" className='text input' value={signuppw} onChange={(e) => { setSignuppw(e.target.value) }} name="name" id="password2"
-                                required placeholder="Enter your password" /></label>
+                            <div className='loginpasswordinput' > 
+                            <input type={registerpasswordfield?"text":"password"} className='text input' value={signuppw} onChange={(e) => { setSignuppw(e.target.value) }} name="name" id="password2"
+                                required placeholder="Enter your password" />
+                                                    {
+                                registerpasswordiconshow&& <button className='loginpasswordicon transparent' onClick={()=>{setRegisterPasswordIconShow(false); setRegisterPasswordField(false)}} > <i className="fa fa-eye-slash "  aria-hidden="true"></i> </button>   
+
+                                }
+                                      {
+                                !registerpasswordiconshow&& <button className='loginpasswordicon transparent' onClick={()=>{setRegisterPasswordIconShow(true); setRegisterPasswordField(true)}} > <i className="fa fa-eye "  aria-hidden="true"></i> </button>   
+
+                                }
+                                </div> 
                                        {
                                register&&signuppw.trim()===''&&  <p className='text-danger text-start p1' >Please Enter Password </p>
                                       
                             }
-                            <label className="lab label" htmlFor="cnpassword"> <input type="text" className='text input' value={cnpw} onChange={(e) => { setCnpw(e.target.value); setConfirmError(false) }} name="name" id="cnpassword"
-                                required placeholder="Confirm password" /></label>
+                            <div className='loginpasswordinput' > 
+                             <input type={confirmpasswordfield?"text":"password"} className='text input' value={cnpw} onChange={(e) => { setCnpw(e.target.value); setConfirmError(false) }} name="name" id="cnpassword"
+                                required placeholder="Confirm password" />
+                                                          {
+                                confirmpasswordiconshow&& <button className='loginpasswordicon transparent' onClick={()=>{setConfirmPasswordIconShow(false); setConfirmPasswordField(false)}} > <i className="fa fa-eye-slash "  aria-hidden="true"></i> </button>   
+
+                                }
+                                      {
+                                !confirmpasswordiconshow&& <button className='loginpasswordicon transparent' onClick={()=>{setConfirmPasswordIconShow(true); setConfirmPasswordField(true)}} > <i className="fa fa-eye "  aria-hidden="true"></i> </button>   
+
+                                }
+                                </div>
                             {/* <p className='text-danger ' > {errors.cnp} </p> */}
                             {
                                register&&cnpw.trim()===''&&  <p className='text-danger text-start p1' >Please Confirm Password </p>

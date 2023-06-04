@@ -189,4 +189,22 @@
     margin-top: 9rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.loginpasswordinput{
+    position: relative;
+}
+.loginpasswordicon{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+.transparent{
+    background-color:transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
