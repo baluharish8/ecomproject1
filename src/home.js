@@ -238,7 +238,8 @@ function Home() {
                     </div>
                     <div className="d-flex justify-content-around headcart row">
                         <div className="cart col col-md-4 col-lg-2">
-                            <a href="https://www.amazon.in/s?k=mobiles&crid=2CVFQERFF2ZZL&sprefix=%2Caps%2C204&ref=nb_sb_ss_recent_2_0_recent" target="_self"><img src="images/cart1mbl.jpg" alt="" className="cart__image" /></a>
+                            <a href="https://www.amazon.in/s?k=mobiles&crid=2CVFQERFF2ZZL&sprefix=%2Caps%2C204&ref=nb_sb_ss_recent_2_0_recent" target="_self">
+                                <img src="images/cart1mbl.jpg" alt="" className="cart__image" /></a>
                             <p className="cart__p1">Mobile phones</p>
                             <Link href="" className="cart__anchor">
                                 <p className="cart__anchor__p2"><span className="cart__anchor__span1">$250</span>

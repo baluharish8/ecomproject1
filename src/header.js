@@ -1,20 +1,34 @@
-import { Link } from "react-router-dom";
-import { useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { forwardRef, useImperativeHandle } from "react"
 import Login from "./login";
 import './headerb4-grid.css';
 function Header(p) {
     // console.log(p)
+    const navigate = useNavigate();
     let [showlogincomp, setShowLoginComp] = useState()
     let button = useRef()
     const [showuserpro, setShowUserPro] = useState(false)
     const [userinfo, setUserInfo] = useState('')
+    // const assignvalue=()=>{setUserInfo(userData)}
     const [search, setSearch] = useState('')
-    function showUserProToggle() {
-        setShowUserPro(!showuserpro)
+
+   
+      useEffect(() => {
+        if (p.trigger) {
+        showUserProFun()
+          
+        }
+      }, [p.trigger]);
+    function showUserProFun() {
+        setShowUserPro(false)
+navigate('/')
     }
     function showLoginCompToggle() {
         setShowLoginComp(!showlogincomp)
     }
+
+    // useEffect(()=>{console.log(userData)},[userData])
 
     function itemSearch() {
         if (search.trim() === '') {
@@ -26,11 +40,10 @@ function Header(p) {
         }
 
     }
-    // p.setPropValue(showUserProToggle)
     return (
         <>
             {/* <Login></Login> */}
-            {showlogincomp && <Login setUserInfo={setUserInfo} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} showUserProToggle={showUserProToggle} ></Login>}
+            {showlogincomp && <Login storingDataFun={p.storingDataFun} setUserInfo={setUserInfo} setUserData={p.setUserData} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} setShowUserPro={setShowUserPro} getFun={p.getFun} storeddata={p.storeddata} ></Login>}
             {!showlogincomp && <div className="bg-dark mb-1 boxshadow headerone">
                 <div className="container-fluid row ">
                     <div className="col-8 col-md-3 col-lg-3  d-flex justify-content-start">
@@ -65,18 +78,23 @@ function Header(p) {
                                 <label className="headerone__logomain__icondiv__label">Help Line</label> </Link>
                         </div>
                         <div className=" pe-5 mediaquery3 headerone__logomain__icondiv">
-                            {!showuserpro && <Link onClick={() => { p.showRouteToggle(); showLoginCompToggle() }} className="headerone__logomain__icondiv__icon" id="login" ><i
+                            {!showuserpro && <Link onClick={() => { p.showRouteToggle(); showLoginCompToggle();}} className="headerone__logomain__icondiv__icon" id="login" ><i
                                 className="fas fa-user-circle   iconhover"></i>
                                 <br />
                                 <label className="headerone__logomain__icondiv__label">Signin</label>
                             </Link>
                             }
-                            {showuserpro &&
-                                <Link to="/" onClick={() => { showUserProToggle() }} className="headerone__logomain__icondiv__icon" id="login" ><i
-                                    className="fas fa-user-circle   iconhover"></i>
-                                    <br />
-                                    <label htmlFor="login" className="headerone__logomain__icondiv__label">{userinfo} <br />SignOut</label>
-                                </Link>
+                            {showuserpro && <>
+                                <div className="userprofilediv">
+                                {/* showUserProToggle() calling Sign in button   */}
+                                    <Link to="/edit" onClick={() => {  }} className="headerone__logomain__icondiv__icon" id="login" ><i
+                                        className="fas fa-user-circle   iconhover"></i>
+                                        <br />
+                                        <label htmlFor="login" className="headerone__logomain__icondiv__label">{userinfo} <br />Edit Profile</label>
+                                    </Link>
+                                 
+                                </div>
+                            </>
                             }
 
                         </div>

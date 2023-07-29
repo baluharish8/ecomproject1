@@ -27,7 +27,7 @@ function Mobiles() {
                 <div className="navbgcolor  mobile__menu" id="one">
                     <div>
                         <div className="">
-                        <Carousel></Carousel>
+                        <Carousel></Carousel>  
                 {/* SLIDER ME */}
                 {/* SLIDER ME*/}
 
@@ -119,29 +119,29 @@ function Mobiles() {
                             <h6 className="category__head">
                                 Category
                             </h6>
-                            <a href="" className="category__anchor">Smartphones & Basic Mobiles</a> <br />
-                            <a href="" className="category__anchor">Smartphones</a> <br />
-                            <a href="" className="category__anchor">Basic Mobiles</a> <br />
+                            <a href="#" className="category__anchor">Smartphones & Basic Mobiles</a> <br />
+                            <a href="#" className="category__anchor">Smartphones</a> <br />
+                            <a href="#" className="category__anchor">Basic Mobiles</a> <br />
                         </div>
                         <div className="mt-2">
                             <h6 className="category__head">Brand</h6>
 
-                            <input type="checkbox" className="" /> <a href="" className="category__anchor"> Nokia </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Samsung </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Oneplus </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Oppo </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Redmi </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> iqoo </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Apple </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Xiaomi </a>
+                            <input type="checkbox" className="" /> <a href="#" className="category__anchor"> Nokia </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Samsung </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Oneplus </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Oppo </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Redmi </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> iqoo </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Apple </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Xiaomi </a>
                             {seemorebtnone && <div className="seemore__hid" id="moreitems">
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Oneplus </a> <br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Oneplus </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Oppo </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Redmi </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> iqoo </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Apple </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Xiaomi </a>
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Oneplus </a> <br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Oneplus </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Oppo </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Redmi </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> iqoo </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Apple </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Xiaomi </a>
                             </div>
                             }
 
@@ -160,11 +160,11 @@ function Mobiles() {
                         <div className="mt-2">
                             <div>
                                 <h6 className="category__head">Price</h6>
-                                <a href="" className="category__anchor">$1000-$5000</a> <br />
-                                <a href="" className="category__anchor">$5000-$10000</a> <br />
-                                <a href="" className="category__anchor">$10000-$15000</a> <br />
-                                <a href="" className="category__anchor">$15000-$20000</a> <br />
-                                <a href="" className="category__anchor">over $20000</a> <br />
+                                <a href="#" className="category__anchor">$1000-$5000</a> <br />
+                                <a href="#" className="category__anchor">$5000-$10000</a> <br />
+                                <a href="#" className="category__anchor">$10000-$15000</a> <br />
+                                <a href="#" className="category__anchor">$15000-$20000</a> <br />
+                                <a href="#" className="category__anchor">over $20000</a> <br />
                             </div>
                             <div className="d-flex align-items-center">
                                 <input type="number" placeholder="$Min" className="price__input me-1" />
@@ -175,33 +175,33 @@ function Mobiles() {
 
                         <div className="mt-3">
                             <h6 className="category__head">Internal Memory</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Less than 4 GB </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Less than 4 GB </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
                         <div className="mt-2">
                             <h6 className="category__head">Cellular Phone Operating System</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Android 10.0</a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Android 11</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 12 </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 13 </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 5.1 </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 6.0 </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 7.1 </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Android 10.0</a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Android 11</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 12 </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 13 </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 5.1 </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 6.0 </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 7.1 </a><br />
                             {seemorebtntwo && <div className="seemore__hid" id="cellular">
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Android 10.0</a> <br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Android 11</a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 12 </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 13 </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 5.1 </a><br />
-                                <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> Android 6.0 </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Android 10.0</a> <br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Android 11</a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 12 </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 13 </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 5.1 </a><br />
+                                <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> Android 6.0 </a><br />
                             </div>
                             }
 
@@ -218,122 +218,94 @@ function Mobiles() {
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
-                        </div>
-
-
-
-                        <div className="mt-3">
-                            <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
-
 
 
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
-                        </div>
-
-
-                        <div className="mt-3">
-                            <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
@@ -341,39 +313,67 @@ function Mobiles() {
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
+                        </div>
+
+
+
+
+                        <div className="mt-3">
+                            <h6 className="category__head">Screen Size</h6>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
+                        </div>
+
+
+                        <div className="mt-3">
+                            <h6 className="category__head">Screen Size</h6>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
                         <div className="mt-3">
                             <h6 className="category__head">Screen Size</h6>
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor">Up to 3.9 in </a> <br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 4GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 8GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 16GB</a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 32GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 64GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 128GB </a><br />
-                            <input type="checkbox" className="pe-2" /> <a href="" className="category__anchor"> 256GB& above </a>
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor">Up to 3.9 in </a> <br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 4GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 8GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 16GB</a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 32GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 64GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 128GB </a><br />
+                            <input type="checkbox" className="pe-2" /> <a href="#" className="category__anchor"> 256GB& above </a>
                         </div>
 
 
@@ -393,7 +393,7 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile1.jpg" className="mobile__div__image   img-fluid " id="img1"
+                                    <a href="#"><img src="images/mobile1.jpg" className="mobile__div__image   img-fluid " id="img1"
                                         alt="" /></a>
                                 </div>
                             </div>
@@ -405,11 +405,11 @@ function Mobiles() {
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">300 Ratings & 20
                                             Reviews</span>
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$299</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 94% off</span>
@@ -437,19 +437,19 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/Redmi-Flagship-Mediatek-Dimensity-Processor/dp/B0B4DWPM27/ref=sr_1_1?crid=274T4LGAFSZAV&keywords=Redmi+K50i+5G+%28Quick+Silver%2C+6GB+RAM%2C+128GB+Storage%29&qid=1685709460&sprefix=redmi+k50i+5g+quick+silver%2C+6gb+ram%2C+128gb+storage+%2Caps%2C1165&sr=8-1" className="mobile__div2__anchor cart__anchor  ">Redmi K50i 5G (Quick Silver, 6GB RAM, 128GB Storage) | Flagship Mediatek Dimensity 8100 Processor | 144Hz Liquid FFS Display</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">100 Ratings & 25
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$499</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 96% off</span>
@@ -477,18 +477,18 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile3.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile3.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">500 Ratings & 20 Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$200</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 86% off</span>
@@ -516,7 +516,7 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile4.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile4.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
@@ -527,12 +527,12 @@ function Mobiles() {
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.7</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.7</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">100 Ratings & 30
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$250</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 80% off</span>
@@ -560,19 +560,19 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile6.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile6.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">300 Ratings &  15
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$350</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 75% off</span>
@@ -601,19 +601,19 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/Redmi-Mystique-AMOLED-Snapdragon%C2%AE-Triple/dp/B0BQ3PYMCZ/ref=sr_1_1_sspa?crid=14UP6TY8KV5RM&keywords=redmi+note+12+5g&qid=1685709918&sprefix=Redmi+Note+12+5G%2Caps%2C803&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.5</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.5</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">100 Ratings &  30
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$450</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 83% off</span>
@@ -640,7 +640,7 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile7.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile7.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
@@ -651,12 +651,12 @@ function Mobiles() {
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.2</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.2</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">200 Ratings &  35
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$299</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 78% off</span>
@@ -684,19 +684,19 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile8.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile8.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/Redmi-Mystique-AMOLED-Snapdragon%C2%AE-Triple/dp/B0BQ3PYMCZ/ref=sr_1_1_sspa?crid=14UP6TY8KV5RM&keywords=redmi+note+12+5g&qid=1685709918&sprefix=Redmi+Note+12+5G%2Caps%2C803&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.9</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.9</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">500 Ratings &  45
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$399</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 79% off</span>
@@ -724,19 +724,19 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile9.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile9.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.5</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.5</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">100 Ratings &  25
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$499</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 80% off</span>
@@ -764,7 +764,7 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile10.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile10.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
@@ -775,12 +775,12 @@ function Mobiles() {
                                     + 64GB ROM, Up to 4GB RAM with Memory Fusion | 13MP AI Dual Rear Camera) - Luxurious Gold</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.1</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">200 Ratings &  20
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$599</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 82% off</span>
@@ -808,24 +808,27 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile2.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S/ref=sr_1_1?crid=23N2EQJM9LLWG&keywords=OnePlus+Nord+CE+3+Lite+5G+%28Chromatic+Gray%2C+8GB+RAM%2C+128GB+Storage&qid=1685709511&sprefix=oneplus+nord+ce+3+lite+5g+chromatic+gray%2C+8gb+ram%2C+128gb+storage%2Caps%2C255&sr=8-1" className="mobile__div2__anchor cart__anchor  ">OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.0</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.0</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">400 Ratings &  22
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <Link to="/">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$299</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 83% off</span>
                                     </p>
                                 </a>
+                                </Link>
+                               
                                 <div className="d-flex align-items-center">
                                     <i className="fa-sharp fa-solid fa-circle pe-2"></i>
                                     <p> 4 GB RAM | 64 GB ROM | Expandable Upto 1 TB</p>
@@ -848,19 +851,19 @@ function Mobiles() {
                             <div
                                 className="mobile__div1 d-flex justify-content-center mobile__div1__align-items__query col-5 col-sm-4 col-md-2 ">
                                 <div>
-                                    <a href=""><img src="images/mobile4.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
+                                    <a href="#"><img src="images/mobile4.jpg" className="mobile__div__image   img-fluid " alt="" /></a>
                                 </div>
                             </div>
                             <div className="mobile__div2 ps-2 pt-3 col">
                                 <a href="https://www.amazon.in/Redmi-Mystique-AMOLED-Snapdragon%C2%AE-Triple/dp/B0BQ3PYMCZ/ref=sr_1_1_sspa?crid=14UP6TY8KV5RM&keywords=redmi+note+12+5g&qid=1685709918&sprefix=Redmi+Note+12+5G%2Caps%2C803&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" className="mobile__div2__anchor cart__anchor  ">Redmi Note 12 5G Mystique Blue 4GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1 | 48MP AI Triple Camera</a>
                                 <br />
                                 <div className="d flex">
-                                    <a href="" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i
+                                    <a href="#" className="d flex cart__anchor text-white mobile__div2__icon"> <span>4.6</span> <i
                                         className="fa-solid fa-star fa-2xs "></i></a> <span className="ratings">100 Ratings &  28
                                             Reviews</span>
 
                                 </div>
-                                <a href="" className="cart__anchor">
+                                <a href="#" className="cart__anchor">
                                     <p className="mobile__div2__p2"><span className="mobile__div2__span1">$399</span>
                                         <span className="mobile__div2__span2">$2999 <span className="cart__border"></span> </span>
                                         <span className="mobile__div2__span3"> 85% off</span>
