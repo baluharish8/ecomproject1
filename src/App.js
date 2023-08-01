@@ -41,7 +41,7 @@ async function serverDownErrorFun(){
     const result = await getData()
 if(result===true){
     setServerDownErrorShow(true)
-    console.log(result+'success')
+    console.log(result+'serverDownSuccess')
     // document.body.style.overflow = serverDownErrorShow ? 'auto' : 'hidden';
 }
 }
@@ -80,7 +80,7 @@ if(result===true){
                 <Routes>
                     {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}
                     <Route exact path='/mobiles' element={<Mobiles></Mobiles>} />
-                    <Route  path='/edit' element={<EditProfiles userData={userData} setTrigger={setTrigger} ></EditProfiles>} />
+                    <Route  path='/edit' element={<EditProfiles userData={userData} setUserData={setUserData} storingDataFun={storingDataFun} setTrigger={setTrigger} ></EditProfiles>} />
                     
                     {!showroute &&<>
                         <Route exact path='/' element={<Home />} />

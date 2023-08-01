@@ -78,14 +78,15 @@ function Login(p) {
                         console.log('not match')
                     } else if (signuppw.trim() == cnpw.trim() && createUserAuth == false && signuppw.trim() !== '' && cnpw.trim() !== '') {
                         // setStoredvalue([...storedvalue, { fname: signinpt, pw: signuppw }])
-                        postData(post)//Inserting form data to API call
-                        p.storingDataFun()
-
-
-                        modalShowToggle()
-                        setError((errors) => ({ ...errors, cnp: '' }))
-                        setRegister(false)
-                        setConfirmError(false)
+                        async function postingData() {
+                            await postData(post)//Inserting form data to API call
+                            p.storingDataFun()
+                            modalShowToggle()
+                            setError((errors) => ({ ...errors, cnp: '' }))
+                            setRegister(false)
+                            setConfirmError(false)
+                        }
+                        postingData()
                     }
                     else {
                         // setError((errors) => ({ ...errors, cnp: 'Password Not Match' }))
@@ -153,9 +154,16 @@ function Login(p) {
                 let matched = user.name.toLowerCase() === un.trim().toLowerCase() && user.password.toString() === pw.toString();
                 if (matched) {
 
-                    p.setUserData(user)
                     loginuserdata = user
                     console.log(user + "UUU")
+                    const { _id, name, password } = user
+                    const modifiedKeyData = {
+                        id: _id,
+                        name: name,
+                        password: password
+                    }
+                    p.setUserData(modifiedKeyData)
+                    console.log(modifiedKeyData)
                 }
                 return matched
             });
@@ -269,7 +277,7 @@ function Login(p) {
                         <div className='row d-flex justify-content-center p-3'>
                             <div className="col-12 col-sm-8 col-md-6 col-lg-4 divc  " id="loginnerdiv">
                                 <form action="" id="form2" className='form'>
-                                    <label className="lab label" htmlFor="yname2"> <input type="text" className='text input' value={signinpt} onChange={(e) => { setSigninpt(e.target.value); setPost({ ...post, name: e.target.value });  setUserNameExistError(false) }} name="name" id="yname2" required
+                                    <label className="lab label" htmlFor="yname2"> <input type="text" className='text input' value={signinpt} onChange={(e) => { setSigninpt(e.target.value); setPost({ ...post, name: e.target.value }); setUserNameExistError(false) }} name="name" id="yname2" required
                                         placeholder="Enter user name" />  </label>
                                     {
                                         register && signinpt.trim() === '' && <p className='text-danger text-start p1' >Please Enter Username </p>

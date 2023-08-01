@@ -14,11 +14,12 @@ function EditProfiles(props) {
     const [currentPasswordError, setCurrentPasswordError] = useState(false)
 
     // const  { id, name }  = props.userData; // REFER NESTED DESTRUCTURE
-    const { userData: { id, name, password } } = props;// THIS IS NESTED DESTRUCTURE
+    // const { userData: { id, name, password } } = props;// THIS IS NESTED DESTRUCTURE
+    const { id, name, password } = props.userData;//ONLY DESTRUCTURE
     console.log(id, name)
     // const {}=props.logoutInfo
 
-
+//edit API
     function handleEdit() {
         if (currentPasswordInput.trim) {
             let data = {
@@ -29,22 +30,34 @@ function EditProfiles(props) {
                 await putData(id, data)
                     .then((response) => {
                         console.log("updatedSuccessfully", response)
-                        setCurrentPasswordError(false)
-                        navigate('/');
-
+                        const asyncFun = async () => {
+                            await props.storingDataFun()
+                            setCurrentPasswordError(false)
+                            props.setUserData('')
+                            props.setTrigger((trigger) => trigger + 1)
+                            navigate('/');
+                        }
+                        asyncFun()
                     })
             }
             asyncArrowFunction()
 
         }
     }
+    //delete API
     const handleDelete = () => {
         const asyncArrowFunction = async () => {
             await deleteData(id)
                 .then((response) => {
                     console.log("deletedSuccessfully", response)
-                    setCurrentPasswordError(false)
-                    navigate('/');
+                    const asyncFun = async () => {
+                        await props.storingDataFun()
+                        setCurrentPasswordError(false)
+                        props.setUserData('')
+                        props.setTrigger((trigger) => trigger + 1)
+                        navigate('/');
+                    }
+                    asyncFun()
                 })
                 .catch(error => {
                     console.log('Delete failed', error);
@@ -52,6 +65,14 @@ function EditProfiles(props) {
         }
         asyncArrowFunction()
     }
+//Logout
+const handleLogout= async ()=>{
+    await props.storingDataFun()
+    setCurrentPasswordError(false)
+    props.setUserData('')
+    props.setTrigger((trigger) => trigger + 1)
+    navigate('/');
+}
 
     function updatePasswordCheck() {
         setCurrentPasswordError(true)
@@ -152,10 +173,9 @@ function EditProfiles(props) {
                             }
                         </div>
                         <div>
-
                             {
                                 !changeDeleteButtonsShow && <div>
-                                    <button type="button" className="btn btn-transparent border rounded p-3 w-100 passwordShowBtton " onClick={() => { props.setTrigger((trigger) => trigger + 1); }} >Logout</button>
+                                    <button type="button" className="btn btn-transparent border rounded p-3 w-100 passwordShowBtton " onClick={() => {handleLogout();  props.setUserData('') }} >Logout</button>
                                 </div>
                             }
                         </div>
