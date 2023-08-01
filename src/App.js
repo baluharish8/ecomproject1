@@ -52,8 +52,8 @@ if(result===true){
         <><div className="maindi" >
 
             {/* <BrowserRouter basename={process.env.PUBLIC_URL} > */}
-            <BrowserRouter >
-                {/* <HashRouter> */}
+            {/* <BrowserRouter > */}
+                <HashRouter>
 
                 <Header storingDataFun={storingDataFun} trigger={trigger} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} setUserData={setUserData} userData={userData} ></Header>
                 {serverDownErrorShow &&
@@ -90,8 +90,8 @@ if(result===true){
                 </Routes>
                 {!showroute && <Footer></Footer>}
 
-                {/* </HashRouter> */}
-            </BrowserRouter >
+                </HashRouter>
+            {/* </BrowserRouter > */}
         </div>
 
         </>

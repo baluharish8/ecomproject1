@@ -30,12 +30,12 @@ export const getData = async () => {
 
 export async function postData(data){
 console.log(data)
-    return await axios.post(baseurl+"users/",data,{headers:{ 'Content-Type': 'application/json' }})
+    return await axios.post(baseurl+"products/",data,{headers:{ 'Content-Type': 'application/json' }})
 }
 
 export async function putData(id,data){
 console.log(id)
-    return await axios.put(baseurl+"users/"+id,data,{headers:{ 'Content-Type': 'application/json' }})
+    return await axios.put(baseurl+"products/"+id,data,{headers:{ 'Content-Type': 'application/json' }})
     // .then((response)=>{
     //   console.log("updatedSuccessfully",response)
     // })
@@ -45,7 +45,7 @@ console.log(id)
 
 export async function deleteData(id,getApi){
 
-    return await axios.delete(baseurl+"users/"+id,{headers:{ 'Content-Type': 'application/json' }})
+    return await axios.delete(baseurl+"products/"+id,{headers:{ 'Content-Type': 'application/json' }})
     // .then(response => {
     //         console.log('Delete successful', response);
         
