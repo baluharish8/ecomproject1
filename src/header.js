@@ -13,16 +13,22 @@ function Header(p) {
     // const assignvalue=()=>{setUserInfo(userData)}
     const [search, setSearch] = useState('')
 
-   
-      useEffect(() => {
+
+    useEffect(() => {
         if (p.trigger) {
-        showUserProFun()
-          
+            showUserProFun()
+
         }
-      }, [p.trigger]);
+    }, [p.trigger]);
+    function logoutFun(){
+        p.setUserData('')
+        showUserProFun()
+        navigate('/');
+
+    }
     function showUserProFun() {
         setShowUserPro(false)
-navigate('/')
+        navigate('/')
     }
     function showLoginCompToggle() {
         setShowLoginComp(!showlogincomp)
@@ -47,14 +53,16 @@ navigate('/')
             {!showlogincomp && <div className="bg-dark mb-1 boxshadow headerone">
                 <div className="container-fluid row ">
                     <div className="col-8 col-md-3 col-lg-3  d-flex justify-content-start">
-                        <div className=" text-white me-4 mediaquery2 ">
-                            <Link to='/about' className="mt-2"><img src="images/logo.png" alt="" /></Link><label
-                                className="headerone__logomain__logodiv__label mt-2">-Shopping</label>
+                        <div className=" text-white me-4 mt-2 mediaquery2 ">
+                            <Link to='/' className="mt-2"><img src="images/logo.png" id="eshoppingIcon" alt="" /><label
+                                className="headerone__logomain__logodiv__label text-white mt-2 cursorPointer" htmlFor="eshoppingIcon">-Shopping</label>
+                            </Link>
                         </div>
-                        <div className=" headerone__logomain__icondiv header_icons">
+
+                        <div className=" headerone__logomain__icondiv  header_icons">
                             <Link className="headerone__logomain__icondiv__icon "><i
-                                className="fa-solid fa-location-dot"></i></Link><br />
-                            <label className="headerone__logomain__icondiv__label">Enter location</label>
+                                className="fa-solid fa-location-dot" id="location"></i></Link><br />
+                            <label className="headerone__logomain__icondiv__label cursorPointer" htmlFor="location">Enter location</label>
                         </div>
                     </div>
                     <div className="col-12 order-12 order-md-1 col-md-7 col-lg-6 headerone__logomain__icondiv d-flex align-items-center  ">
@@ -67,41 +75,50 @@ navigate('/')
                         </form>
                     </div>
                     <div className="col-4 order-1 order-md-12 col-md-2 col-lg-3 d-flex justify-content-end">
-                        <div className=" pe-5 mediaquery3 headerone__logomain__icondiv header_icons">
-                            <a href="https://www.amazon.in/gp/browse.html?node=3704982031&ref_=nav_em_sbc_gc_all_0_2_19_2" className="headerone__logomain__icondiv__icon"><i
+                        <div className=" pe-5 mediaquery3 headerone__logomain__icondiv header_icons ">
+                            <a href="https://www.amazon.in/gp/browse.html?node=3704982031&ref_=nav_em_sbc_gc_all_0_2_19_2" className="headerone__logomain__icondiv__icon" id="giftcard" ><i
                                 className="fa-sharp fa-solid fa-hand-holding-heart "></i></a><br />
-                            <label className="headerone__logomain__icondiv__label">Gift card</label>
+                            <label className="headerone__logomain__icondiv__label cursorPointer " htmlFor="giftcard">Gift card</label>
                         </div>
-                        <div className="pe-5 mediaquery3 headerone__logomain__icondiv header_icons">
-                            <Link className=" headerone__logomain__icondiv__icon"><i
+                        <div className=" pe-5 mediaquery3 headerone__logomain__icondiv header_icons">
+                            <Link className=" headerone__logomain__icondiv__icon" id="helpline"><i
                                 className="fa-solid fa-phone-flip"></i> <br />
-                                <label className="headerone__logomain__icondiv__label">Help Line</label> </Link>
+                                <label className="headerone__logomain__icondiv__label cursorPointer" htmlFor="helpline">Help Line</label> </Link>
                         </div>
-                        <div className=" pe-5 mediaquery3 headerone__logomain__icondiv">
-                            {!showuserpro && <Link onClick={() => { p.showRouteToggle(); showLoginCompToggle();}} className="headerone__logomain__icondiv__icon" id="login" ><i
+
+                        <div className=" pe-5  mediaquery3 headerone__logomain__icondiv list1 ">
+                            {!showuserpro && <Link onClick={() => { p.showRouteToggle(); showLoginCompToggle(); }} className="headerone__logomain__icondiv__icon" id="signin" ><i
                                 className="fas fa-user-circle   iconhover"></i>
                                 <br />
-                                <label className="headerone__logomain__icondiv__label">Signin</label>
+                                <label htmlFor="signin" className="headerone__logomain__icondiv__label cursorPointer ">Signin</label>
                             </Link>
                             }
                             {showuserpro && <>
-                                <div className="userprofilediv">
-                                {/* showUserProToggle() calling Sign in button   */}
-                                    <Link to="/edit" onClick={() => {  }} className="headerone__logomain__icondiv__icon" id="login" ><i
+                                <div className="">
+                                    {/* showUserProToggle() calling Sign in button   */}
+                                    <Link to="/edit" onClick={() => { }} className="headerone__logomain__icondiv__icon" id="login" ><i
                                         className="fas fa-user-circle   iconhover"></i>
-                                        <br />
-                                        <label htmlFor="login" className="headerone__logomain__icondiv__label">{userinfo} <br />Edit Profile</label>
+                                        <br></br>
+                                        <label htmlFor="login" className="headerone__logomain__icondiv__label cursorPointer pb-0 " > <p className="usernamewrapper"> {userinfo} <br></br> Profile</p> </label>
                                     </Link>
-                                 
+                                </div>
+                                <div className="seemore__hide profilehover__maindiv ">
+                                    <div className="profilehover ">
+                                        <button type="button" className="btn btn-light border rounded  w-100 profilehover__btn p-0  " onClick={() => {navigate('/edit') }} >EditProfile</button>
+    
+                                        <button type="button" className="btn btn-light border rounded  w-100 profilehover__btn p-0" onClick={() => {logoutFun() }} >Logout</button>
+
+                                    </div>
+
                                 </div>
                             </>
                             }
 
                         </div>
-                        <div className=" headerone__logomain__icondiv">
-                            <Link className=" headerone__logomain__icondiv__icon"><i className="fas fa-shopping-cart"></i>
+                        <div className=" ps-3  headerone__logomain__icondiv">
+                            <Link className=" headerone__logomain__icondiv__icon" id="cart"><i className="fas fa-shopping-cart"></i>
                                 <br />
-                                <label className="headerone__logomain__icondiv__label">Cart</label>
+                                <label className="headerone__logomain__icondiv__label cursorPointer " htmlFor="cart">Cart</label>
                             </Link>
 
                         </div>

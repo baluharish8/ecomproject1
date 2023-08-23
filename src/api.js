@@ -1,8 +1,6 @@
 import axios from "axios";
 // const baseurl="http://localhost:5001/";
 // const baseurl="http://localhost/"; //***Don't use any port bcz Default port(80) assigned 
-// const baseurl="http://raj333-45323.portmap.host:45323/";
-// const baseurl="http://namekrish-20205.portmap.io:20205/";
 const baseurl="https://amused-newt-knickers.cyclic.cloud/";
 
 

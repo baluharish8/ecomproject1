@@ -187,21 +187,33 @@ padding: 0 !important;
   font-size: 20px;
   /* logotext */
 }
+.profilehover{
+  border: solid 0px ;
 
+}
+.cursorPointer{
+  cursor: pointer;
+}
 .headerone__logomain__icondiv {
   text-align: center;
   /* center */
 }
-
+.usernamewrapper{
+  width: 8ch;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .headerone__logomain__icondiv:hover {
   text-align: center;
-  transform: scale(1.02);
+  cursor: pointer;
+  /* transform: scale(1.02); */ /*hover elements overide because of this line
   /* border:solid;
   border-width: 1px;
   border-color:#92bce4; */
 
   /* background-color: blue; */
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;
+  
   /* center */
 }
 
@@ -220,11 +232,7 @@ padding: 0 !important;
   /* is */
   text-decoration: none;
 }
-.userprofilediv:hover .userprofilehover{
-display: block;
-position: absolute;
-z-index: 500000000000 !important;
-}
+
 /* .userprofilehover{
   position: relative;
   z-index: 500000000000 !important;
@@ -625,10 +633,26 @@ h6 {
   z-index: 100000000 !important;
   background-color: #ffffff;
   border-radius: 5px;
-
+}
+.profilehover__maindiv{
+  position: absolute;
+  /* bottom: 20px; */
+  top: 100%;
+  /* left: 200px; */
+  right: 15%;
+  z-index: 10000 ;
+  /* background-color: #ffffff; */
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.profilehover__btn:hover{
+  background-color: rgb(33, 37, 41,0.8);
+  /* font-size:large; */
+  /* color:rgb(224, 99, 15); */
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
 }
-
 .list1__dpdn {
   border: none;
   background-color: transparent;
@@ -650,7 +674,10 @@ h6 {
   display: block;
   /* margin-top: 30px; */
 }
-
+.list1:hover .profilehover__maindiv {
+  display: block;
+  /* margin-top: 30px; */
+}
 .list1:hover .dpdn__anchor {
   /* !line bcz of this paddTopBott & marTopBott changes */
   display: inline-block;

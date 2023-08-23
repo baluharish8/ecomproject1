@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { deleteData, putData } from "./api"
 import { useNavigate } from 'react-router-dom';
 import './editprofile.css'
@@ -12,6 +12,9 @@ function EditProfiles(props) {
     const [deleteDivShow, setDeleteDivShow] = useState(false)
     const [passwordDivShow2, setPasswordDivShow2] = useState(false)
     const [currentPasswordError, setCurrentPasswordError] = useState(false)
+    const[passwordNotMatchError,setPasswordNotMatchError]=useState(false)
+    const[rePasswordNotMatchError,setRePasswordNotMatchError]=useState(false)
+
 
     // const  { id, name }  = props.userData; // REFER NESTED DESTRUCTURE
     // const { userData: { id, name, password } } = props;// THIS IS NESTED DESTRUCTURE
@@ -65,6 +68,7 @@ function EditProfiles(props) {
         }
         asyncArrowFunction()
     }
+ 
 //Logout
 const handleLogout= async ()=>{
     await props.storingDataFun()
@@ -79,10 +83,14 @@ const handleLogout= async ()=>{
         if (currentPasswordInput == '') {
             console.log("Enter password")
         } else if (password !== currentPasswordInput.trim()) {
-            console.log("Current password is wrong")
+            setPasswordNotMatchError(true)
+            console.log("Current password is wrong"+passwordNotMatchError)
         } else if (newPassword.trim() == rePassword.trim()) {
             handleEdit()
-        } else { console.log("Re-entered Password not match") }
+        } else { 
+            setRePasswordNotMatchError(true)
+            console.log("Re-entered Password not match")
+         }
     }
     const deleteCheck = () => {
         setCurrentPasswordError(true)
@@ -91,32 +99,19 @@ const handleLogout= async ()=>{
         } else if (deletePasswordCheck == password) {
             handleDelete()
         } else {
-            console.log("Password wrong")
+            setPasswordNotMatchError(true)
+            console.log("Password wrong"+passwordNotMatchError)
         }
     }
 
     return (
         <>
-            {/* <div className="text-center ">
-                <div className="">
-                    <div className=" d-flex justify-content-center  ">
-                        <div className="w-75 " >
-                            <input type="password" className="form-control" value={currentPasswordInput} onChange={(e)=>setCurrentPasswordInput(e.target.value)} ></input>
-                            <p>{password}</p>
-                            <button className="btn btn-warning mt-1" onClick={()=>handleEdit()} >Change Password</button>
-                        </div>
-                    </div>
-                    <div className="d-flex justify-content-center mt-1">
-                        <button className="btn btn-danger" onClick={()=>handleDelete()} >Delete Account</button>
-                    </div>
-                </div>
-
-            </div> */}
+      
             <div className="maindiv d-flex justify-content-center " >
                 <div className="  mt-5">
                     <form  >
-                        <h3>Change Password</h3>
-                        <div className="mt-3 mb-3">
+                        <h3>Account Details</h3>
+                        <div className="mt-5 mb-3">
                             {
                                 !changeDeleteButtonsShow && <div>
                                     {/* <span class="border rounded-0 p-3">hdgahdg</span><br></br> */}
@@ -127,9 +122,12 @@ const handleLogout= async ()=>{
                                 passwordDivShow2 && <div className="boxsha"  >
                                     <div className="mb-3">
                                         <label htmlFor="exampleInputPassword1" className="form-label h6 ">Current password:</label>
-                                        <input type="password" className="form-control" id="exampleInputPassword1" value={currentPasswordInput} onChange={(e) => { setCurrentPasswordInput(e.target.value) }} />
+                                        <input type="password" className="form-control" id="exampleInputPassword1" value={currentPasswordInput} onChange={(e) => { setCurrentPasswordInput(e.target.value);setPasswordNotMatchError(false) }} />
                                         {
                                             currentPasswordError && currentPasswordInput.trim() === '' && <p className="text-danger">Enter password</p>
+                                        }
+                                         {
+                                            passwordNotMatchError && currentPasswordInput.trim() !== '' && <p className="text-danger">Current password not match</p>
                                         }
                                     </div>
 
@@ -141,10 +139,13 @@ const handleLogout= async ()=>{
                                         }
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="exampleInputPassword3" className="form-label h6 ">Reenter new password:</label>
-                                        <input type="password" className="form-control" id="exampleInputPassword3" value={rePassword} onChange={(e) => { setRePassword(e.target.value) }} />
+                                        <label htmlFor="exampleInputPassword3" className="form-label h6 ">ReEnter new password:</label>
+                                        <input type="password" className="form-control" id="exampleInputPassword3" value={rePassword} onChange={(e) => { setRePassword(e.target.value);setRePasswordNotMatchError(false) }} />
                                         {
                                             currentPasswordError && rePassword.trim() === '' && <p className="text-danger">Re-Enter New password</p>
+                                        }
+                                          {
+                                            rePasswordNotMatchError && currentPasswordInput.trim() !== '' && <p className="text-danger">Re-Entered password not match</p>
                                         }
                                     </div>
                                     <button type="button" className="btn btn-warning" onClick={() => { updatePasswordCheck() }} >Update password</button>
@@ -162,13 +163,16 @@ const handleLogout= async ()=>{
                                 deleteDivShow && <>
                                     <div className="mb-3">
                                         <label htmlFor="exampleInputPassword4" className="form-label h6 ">Current password:</label>
-                                        <input type="password" className="form-control" id="exampleInputPassword4" value={deletePasswordCheck} onChange={(e) => setDeletePasswordCheck(e.target.value)} />
+                                        <input type="password" className="form-control" id="exampleInputPassword4" value={deletePasswordCheck} onChange={(e) => {setDeletePasswordCheck(e.target.value);setPasswordNotMatchError(false)}} />
                                         {
                                             currentPasswordError && deletePasswordCheck.trim() === '' && <p className="text-danger">Enter password</p>
                                         }
+                                               {
+                                            passwordNotMatchError && deletePasswordCheck.trim() !== '' && <p className="text-danger">Current password not match</p>
+                                        }
                                     </div>
-                                    <button type="button" className="btn btn-danger" onClick={() => { deleteCheck() }} >Delete Account</button>
-
+                                    <button type="button" className="btn btn-danger" onClick={() => { deleteCheck();  }} >Delete Account</button>
+                             
                                 </>
                             }
                         </div>
@@ -176,6 +180,7 @@ const handleLogout= async ()=>{
                             {
                                 !changeDeleteButtonsShow && <div>
                                     <button type="button" className="btn btn-transparent border rounded p-3 w-100 passwordShowBtton " onClick={() => {handleLogout();  props.setUserData('') }} >Logout</button>
+                                 
                                 </div>
                             }
                         </div>
