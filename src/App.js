@@ -4,7 +4,7 @@ import Home from "./home";
 import Mobiles from "./mobiles";
 import Footer from "./footer";
 import Header from "./header";
-import Login from "./login";
+import Login from "./loginmodified";
 import "./App.css"
 import { HashRouter } from "react-router-dom";
 import { getData, postData, putData, deleteData } from "./api"
@@ -17,6 +17,10 @@ function App() {
     const [storeddata, setStoredData] = useState()
     const [userData, setUserData] = useState('')
     const [trigger, setTrigger] = useState(0);
+    const [trigger2, setTrigger2] = useState(0);
+
+    let [showlogincomp, setShowLoginComp] = useState()
+    const [userinfo, setUserInfo] = useState('')
 
     const [serverDownErrorShow, setServerDownErrorShow] = useState(false)
     function showRouteToggle() {
@@ -48,15 +52,16 @@ function App() {
     }
 
 
+
     // const basename = document.querySelector('base')?.getAttribute('href') ?? '/' 
     return (
         <><div className="maindi" >
 
             {/* <BrowserRouter basename={process.env.PUBLIC_URL} > */}
             {/* <BrowserRouter > */}
-                <HashRouter>
+            <HashRouter>
 
-                <Header storingDataFun={storingDataFun} trigger={trigger}  showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} setUserData={setUserData} userData={userData} ></Header>
+                {!showroute && <Header storingDataFun={storingDataFun} trigger={trigger} trigger2={trigger2} userinfo={userinfo} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} setUserData={setUserData} userData={userData} ></Header>}
                 {serverDownErrorShow &&
                     <div className="modalServer " >
                         <div className="modal-dialog" id='modal-dia'>
@@ -80,6 +85,8 @@ function App() {
                 }
                 <Routes>
                     {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}
+                    <Route exact path='/login' element={<Login storingDataFun={storingDataFun} setUserInfo={setUserInfo} setTrigger2={setTrigger2} setUserData={setUserData} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} ></Login>} />
+
                     <Route exact path='/mobiles' element={<Mobiles></Mobiles>} />
                     <Route path='/edit' element={<EditProfiles userData={userData} setUserData={setUserData} storingDataFun={storingDataFun} setTrigger={setTrigger} ></EditProfiles>} />
 
@@ -91,7 +98,7 @@ function App() {
                 </Routes>
                 {!showroute && <Footer></Footer>}
 
-                </HashRouter>
+            </HashRouter>
             {/* </BrowserRouter > */}
         </div>
 

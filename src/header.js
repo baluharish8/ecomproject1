@@ -9,7 +9,7 @@ function Header(p) {
     let [showlogincomp, setShowLoginComp] = useState()
     let button = useRef()
     const [showuserpro, setShowUserPro] = useState(false)
-    const [userinfo, setUserInfo] = useState('')
+    // const [userinfo, setUserInfo] = useState('')
     // const assignvalue=()=>{setUserInfo(userData)}
     const [search, setSearch] = useState('')
 
@@ -20,6 +20,12 @@ function Header(p) {
 
         }
     }, [p.trigger]);
+    useEffect(() => {
+        if (p.trigger2) {
+            showUserProFun2()
+
+        }
+    }, [p.trigger2]);
     function logoutFun(){
         p.setUserData('')
         showUserProFun()
@@ -30,6 +36,11 @@ function Header(p) {
         setShowUserPro(false)
         navigate('/')
     }
+    function showUserProFun2() {
+        setShowUserPro(true)
+        
+    }
+
     function showLoginCompToggle() {
         setShowLoginComp(!showlogincomp)
     }
@@ -49,8 +60,8 @@ function Header(p) {
     return (
         <>
             {/* <Login></Login> */}
-            {showlogincomp && <Login storingDataFun={p.storingDataFun} setUserInfo={setUserInfo} setUserData={p.setUserData} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} setShowUserPro={setShowUserPro} getFun={p.getFun} storeddata={p.storeddata} ></Login>}
-            {!showlogincomp && <div className="bg-dark mb-1 boxshadow headerone">
+            {/* {showlogincomp && <Login storingDataFun={p.storingDataFun} setUserInfo={setUserInfo} setUserData={p.setUserData} showRouteToggle={p.showRouteToggle} showLoginCompToggle={showLoginCompToggle} setShowUserPro={setShowUserPro} getFun={p.getFun} storeddata={p.storeddata} ></Login>} */}
+            { <div className="bg-dark mb-1 boxshadow headerone">
                 <div className="container-fluid row ">
                     <div className="col-8 col-md-3 col-lg-3  d-flex justify-content-start">
                         <div className=" text-white me-4 mt-2 mediaquery2 ">
@@ -87,7 +98,7 @@ function Header(p) {
                         </div>
 
                         <div className=" pe-5  mediaquery3 headerone__logomain__icondiv list1 ">
-                            {!showuserpro && <Link onClick={() => { p.showRouteToggle(); showLoginCompToggle(); }} className="headerone__logomain__icondiv__icon" id="signin" ><i
+                            {!showuserpro && <Link to="/login" onClick={() => { p.showRouteToggle() }} className="headerone__logomain__icondiv__icon" id="signin" ><i
                                 className="fas fa-user-circle   iconhover"></i>
                                 <br />
                                 <label htmlFor="signin" className="headerone__logomain__icondiv__label cursorPointer ">Signin</label>
@@ -99,7 +110,7 @@ function Header(p) {
                                     <Link to="/edit" onClick={() => { }} className="headerone__logomain__icondiv__icon" id="login" ><i
                                         className="fas fa-user-circle   iconhover"></i>
                                         <br></br>
-                                        <label htmlFor="login" className="headerone__logomain__icondiv__label cursorPointer pb-0 " > <p className="usernamewrapper"> {userinfo} <br></br> Profile</p> </label>
+                                        <label htmlFor="login" className="headerone__logomain__icondiv__label cursorPointer pb-0 " > <p className="usernamewrapper"> {p.userinfo} <br></br> Profile</p> </label>
                                     </Link>
                                 </div>
                                 <div className="seemore__hide profilehover__maindiv ">
