@@ -1,5 +1,8 @@
 import axios from "axios";
-
+// const baseurl="http://localhost:5001/";
+// const baseurl="http://localhost/"; //***Don't use any port bcz Default port(80) assigned 
+// const baseurl="http://localhost:2500/"; //ubuntu server one
+// const baseurl="http://localhost:3000/"
 const baseurl="https://amused-newt-knickers.cyclic.cloud/";
 
 
@@ -13,7 +16,7 @@ export const getData = async () => {
       return response;
     } catch (error) {
       // Handle the error without displaying the "Network Error" message
-      console.log('Oops! Something went wrong. Please try again later.');
+      console.log('Something went wrong. Please try again later.');
       return (true)
     }
   };

@@ -155,7 +155,8 @@ function Login(p) {
             let storedvaluelogin = p.storeddata
             console.log(storedvaluelogin)
             const namepw = storedvaluelogin.some((user) => {
-                let matched = user.name.toLowerCase() === un.trim().toLowerCase() && user.password.toString() === pw.toString();
+                // console.log(un.toLowerCase()==user.name.toLowerCase())
+                let matched = user.name.toLowerCase() === un.trim().toLowerCase() && user.password.toString() === pw.toString().trim();
                 if (matched) {
 
                     loginuserdata = user
@@ -285,7 +286,7 @@ function Login(p) {
                         <div className='row d-flex justify-content-center p-3'>
                             <div className="col-12 col-sm-8 col-md-6 col-lg-4 divc  " id="loginnerdiv">
                                 <form action="" id="form2" className='form'>
-                                    <label className="lab label" htmlFor="yname2"> <input type="text" className='text input' value={signinpt} onChange={(e) => { setSigninpt(e.target.value); setPost({ ...post, name: e.target.value }); setUserNameExistError(false) }} name="name" id="yname2" required
+                                    <label className="lab label" htmlFor="yname2"> <input type="text" className='text input' value={signinpt} onChange={(e) => { setSigninpt(e.target.value); setPost({ ...post, name: e.target.value.trim() }); setUserNameExistError(false) }} name="name" id="yname2" required
                                         placeholder="Enter user name" />  </label>
                                     {
                                         register && signinpt.trim() === '' && <p className='text-danger text-start p1' >Please Enter Username </p>
@@ -296,7 +297,7 @@ function Login(p) {
 
                                     }
                                     <div className='loginpasswordinput' >
-                                        <input type={registerpasswordfield ? "text" : "password"} className='text input' value={signuppw} onChange={(e) => { setSignuppw(e.target.value); setPost({ ...post, password: e.target.value }) }} name="name" id="password2"
+                                        <input type={registerpasswordfield ? "text" : "password"} className='text input' value={signuppw} onChange={(e) => { setSignuppw(e.target.value); setPost({ ...post, password: e.target.value.trim() }) }} name="name" id="password2"
                                             required placeholder="Enter your password" />
                                         {
                                             registerpasswordiconshow && <button className='loginpasswordicon transparent' onClick={() => { setRegisterPasswordIconShow(false); setRegisterPasswordField(false) }} > <i className="fa fa-eye-slash " aria-hidden="true"></i> </button>

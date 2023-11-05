@@ -51,17 +51,17 @@ function App() {
         }
     }
 
-
+     
 
     // const basename = document.querySelector('base')?.getAttribute('href') ?? '/' 
     return (
         <><div className="maindi" >
 
             {/* <BrowserRouter basename={process.env.PUBLIC_URL} > */}
-            {/* <BrowserRouter > */}
-            <HashRouter>
+            <BrowserRouter >
+                {/* <HashRouter> */}
 
-                {!showroute && <Header storingDataFun={storingDataFun} trigger={trigger} trigger2={trigger2} userinfo={userinfo} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} setUserData={setUserData} userData={userData} ></Header>}
+               {!showroute && <Header storingDataFun={storingDataFun} trigger={trigger} trigger2={trigger2} userinfo={userinfo} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} setUserData={setUserData} userData={userData} ></Header>}
                 {serverDownErrorShow &&
                     <div className="modalServer " >
                         <div className="modal-dialog" id='modal-dia'>
@@ -85,7 +85,7 @@ function App() {
                 }
                 <Routes>
                     {/* <Route path='/login' element={<Login showRouteToggle={showRouteToggle} ></Login> } /> */}
-                    <Route exact path='/login' element={<Login storingDataFun={storingDataFun} setUserInfo={setUserInfo} setTrigger2={setTrigger2} setUserData={setUserData} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} ></Login>} />
+                    <Route exact path='/login' element= { <Login storingDataFun={storingDataFun} setUserInfo={setUserInfo} setTrigger2={setTrigger2} setUserData={setUserData} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} ></Login>}/>
 
                     <Route exact path='/mobiles' element={<Mobiles></Mobiles>} />
                     <Route path='/edit' element={<EditProfiles userData={userData} setUserData={setUserData} storingDataFun={storingDataFun} setTrigger={setTrigger} ></EditProfiles>} />
@@ -98,8 +98,8 @@ function App() {
                 </Routes>
                 {!showroute && <Footer></Footer>}
 
-            </HashRouter>
-            {/* </BrowserRouter > */}
+                {/* </HashRouter> */}
+            </BrowserRouter >
         </div>
 
         </>
