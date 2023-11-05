@@ -58,8 +58,8 @@ function App() {
         <><div className="maindi" >
 
             {/* <BrowserRouter basename={process.env.PUBLIC_URL} > */}
-            <BrowserRouter >
-                {/* <HashRouter> */}
+            {/* <BrowserRouter > */}
+                <HashRouter>
 
                {!showroute && <Header storingDataFun={storingDataFun} trigger={trigger} trigger2={trigger2} userinfo={userinfo} showRouteToggle={showRouteToggle} getFun={getFun} storeddata={storeddata} setUserData={setUserData} userData={userData} ></Header>}
                 {serverDownErrorShow &&
@@ -98,8 +98,8 @@ function App() {
                 </Routes>
                 {!showroute && <Footer></Footer>}
 
-                {/* </HashRouter> */}
-            </BrowserRouter >
+                </HashRouter>
+            {/* </BrowserRouter > */}
         </div>
 
         </>
